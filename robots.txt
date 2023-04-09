@@ -1,1 +1,1 @@
-Sitemap: https://someoneelsescloud.github.io/someoneelsescloud/sitemap.xml
+Sitemap: https://someoneelsescloud.github.io/sitemap.xml
