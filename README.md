@@ -1,48 +1,68 @@
-Download https://github.com/mishamosher/CentOS-WSL
-Extract
-Run exe
+# Akio – Creative Portfolio Theme for Jekyll
 
-```
-CentOS Linux 8 had reached the End Of Life (EOL) on December 31st, 2021. It means that CentOS 8 will no longer receive development resources from the official CentOS project. After Dec 31st, 2021, if you need to update your CentOS, you need to change the mirrors to vault.centos.org where they will be archived permanently.
+Akio is a creative personal portfolio Jekyll theme. This theme has a modern design and high-speed performance. The highlights of this theme include support Github Pages, light and dark mode, and also sections such as work, blog, clients, and testimonials. Perfectly suitable for any developer, designer, freelancer, software engineer, or some other who needs a professional way to showcase their work.
 
-Step 1: Go to the /etc/yum.repos.d/ directory.
+* * *
 
-Step 2: Run the below commands
-sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
-sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+### Demo
 
-Step 3: To clean all cached information, use the following command
-yum clean all
+Check the theme in action [Live Demo](https://akio-jekyll.netlify.app/) |
+[Artem Sheludko](https://jekyllthemes.io/developers/artem-sheludko)
 
-Step 4: Now run the yum update
-yum update -y
-```	
+* * *
 
-cd /etc/yum.repos.d/
+### Theme features
 
-sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
-sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+- Works with GitHub Pages (host it for free)
+- Dark and light mode user can select themself
+- No jQuery, only vanilla JS
+- 100% responsive Design
+- Clean Code
+- Optimized for mobile devices
+- Section Blog
+- Section Works
+- Section Testimonials
+- Super fast performance ⚡⚡⚡
+- Social sharing buttons
+- Scroll to top button
+- Syntax highlighting (supports the Jekyll syntax highlighter)
+- Compatible with modern browsers
+- Medium style image zoom
+- Image Lazy loading
+- Image gallery
+- Custom logo support
+- Supports contact form (Formspree)
+- Supports MailChimp newsletter
+- Supports Disqus comments
+- Supports Google Analytics
+- Ionicons icons
+- Free Google Fonts
+- Free Updates & Support
 
-dnf distro-sync
+* * *
 
-### Install NPM and NodeJS
-yum install npm
+### Installation
 
-### Install docusaurus
-npm install --global docusaurus-init
+#### Installing Ruby & Jekyll
 
-mkdir docusaurus-swa-app
- cd docusaurus-swa-app
+If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
 
-docusaurus-init
-npm start 
-or: npx docusaurus start (seems to maybe be better?)
+* * *
 
-yum install net-tools -y
+### Deployment
 
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
 
-----------
+I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
 
-https://github.com/sharadcodes/jekyll-theme-serial-programmer
+* * *
 
-bundle add webrick# someoneelsescloud.github.io
+### Documentation
+
+Before using the Akio theme, please read the attached documentation.
+
+* * *
+
+### Support
+
+<p>If you have any questions, please feel free to contact me by mail <a href="mailto:hi.artemsheludko@gmail.com">Contact</a><p>

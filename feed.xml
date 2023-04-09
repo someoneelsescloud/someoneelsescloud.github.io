@@ -3,10 +3,10 @@
     <channel>
         <title>Someone Elses Cloud</title>
         <description>Just trying to automate my life in cloud.</description>
-        <link>http://localhost:4000/someoneelsescloud/</link>
-        <atom:link href="http://localhost:4000/someoneelsescloud/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 10 Apr 2023 09:32:10 +1000</pubDate>
-        <lastBuildDate>Mon, 10 Apr 2023 09:32:10 +1000</lastBuildDate>
+        <link>https://someoneelsescloud.github.io/someoneelsescloud/</link>
+        <atom:link href="https://someoneelsescloud.github.io/someoneelsescloud/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Mon, 10 Apr 2023 09:38:20 +1000</pubDate>
+        <lastBuildDate>Mon, 10 Apr 2023 09:38:20 +1000</lastBuildDate>
         <generator>Jekyll v3.9.3</generator>
         
             <item>
@@ -48,8 +48,8 @@
 &lt;p&gt;Paper was first made in China as early as 200 BC, and reached Europe through Muslim territories. At first made of rags, the industrial revolution changed paper-making practices, allowing for paper to be made out of wood pulp. Papermaking in Europe began in the 11th century, although vellum was also common there as page material up until the beginning of the 16th century, vellum being the more expensive and durable option.&lt;/p&gt;
 </description>
                 <pubDate>Fri, 14 Oct 2022 23:01:35 +1100</pubDate>
-                <link>http://localhost:4000/someoneelsescloud/blog/that-which-does-not-kill-us-makes-us-stronger</link>
-                <guid isPermaLink="true">http://localhost:4000/someoneelsescloud/blog/that-which-does-not-kill-us-makes-us-stronger</guid>
+                <link>https://someoneelsescloud.github.io/someoneelsescloud/blog/that-which-does-not-kill-us-makes-us-stronger</link>
+                <guid isPermaLink="true">https://someoneelsescloud.github.io/someoneelsescloud/blog/that-which-does-not-kill-us-makes-us-stronger</guid>
                 
                 <category>workflow</category>
                 
@@ -90,8 +90,8 @@
 &lt;p&gt;Paper was first made in China as early as 200 BC, and reached Europe through Muslim territories. At first made of rags, the industrial revolution changed paper-making practices, allowing for paper to be made out of wood pulp. Papermaking in Europe began in the 11th century, although vellum was also common there as page material up until the beginning of the 16th century, vellum being the more expensive and durable option.&lt;/p&gt;
 </description>
                 <pubDate>Fri, 14 Oct 2022 23:01:35 +1100</pubDate>
-                <link>http://localhost:4000/someoneelsescloud/blog/that-which-does-not-kill-us-makes-us-stronger-copy</link>
-                <guid isPermaLink="true">http://localhost:4000/someoneelsescloud/blog/that-which-does-not-kill-us-makes-us-stronger-copy</guid>
+                <link>https://someoneelsescloud.github.io/someoneelsescloud/blog/that-which-does-not-kill-us-makes-us-stronger-copy</link>
+                <guid isPermaLink="true">https://someoneelsescloud.github.io/someoneelsescloud/blog/that-which-does-not-kill-us-makes-us-stronger-copy</guid>
                 
                 <category>workflow</category>
                 
