@@ -1,1 +1,1 @@
-bundle exec jekyll build --destination ../someoneelsescloud.github.io/pages
+bundle exec jekyll build --destination ../someoneelsescloud.github.io/docs
