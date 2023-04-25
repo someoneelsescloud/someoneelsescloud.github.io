@@ -5,13 +5,34 @@
         <description>Just trying to automate my life in cloud.</description>
         <link>https://someoneelsescloud.github.io/</link>
         <atom:link href="https://someoneelsescloud.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 25 Apr 2023 16:34:15 +1000</pubDate>
-        <lastBuildDate>Tue, 25 Apr 2023 16:34:15 +1000</lastBuildDate>
+        <pubDate>Wed, 26 Apr 2023 08:07:15 +1000</pubDate>
+        <lastBuildDate>Wed, 26 Apr 2023 08:07:15 +1000</lastBuildDate>
         <generator>Jekyll v3.9.3</generator>
         
             <item>
-                <title>Build a static Web App  in Azure using GitHub Actions, Jekyll and Terraform.</title>
-                <description>&lt;h1 id=&quot;hymnals-are-books-with-collections-of-musical-hymns-that-can-typically-be-found-in-churches-prayerbooks-or-missals-are-books-that-contain-written-prayers-and-are-commonly-carried-by-monks-nuns-and-other-devoted-followers-or-clergy-lap-books-are-a-learning-tool-created-by-students&quot;&gt;Hymnals are books with collections of musical hymns that can typically be found in churches. Prayerbooks or missals are books that contain written prayers and are commonly carried by monks, nuns, and other devoted followers or clergy. Lap books are a learning tool created by students.&lt;/h1&gt;
+                <title>Build a Website in Azure using GitHub Actions, Jekyll and Terraform Cloud.</title>
+                <description>&lt;p&gt;Repository: https://github.com/someoneelsescloud/azure_website_actions_terraform&lt;/p&gt;
+
+&lt;h2 id=&quot;setup-terraform-cloud-workspace&quot;&gt;Setup Terraform Cloud Workspace&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Log into &lt;a href=&quot;https://app.terraform.io/app&quot;&gt;Terraform Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Under Projects &amp;amp; Workspaces, Click Create Workspace&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Create Terraform worskpace
+Create repo
+actions &amp;gt; secrets
+Add terraform api token as secret
+(also configure locally as well for pre setup)&lt;/p&gt;
+
+&lt;p&gt;create github actions .github/workflow/terraform.yaml 
+https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions&lt;/p&gt;
+
+&lt;p&gt;create web app secret token: AZURE_STATIC_WEB_APPS_API_TOKEN
+web app &amp;gt; Manage deployment token&lt;/p&gt;
+
+&lt;h1 id=&quot;hymnals-are-books-with-collections-of-musical-hymns-that-can-typically-be-found-in-churches-prayerbooks-or-missals-are-books-that-contain-written-prayers-and-are-commonly-carried-by-monks-nuns-and-other-devoted-followers-or-clergy-lap-books-are-a-learning-tool-created-by-students&quot;&gt;Hymnals are books with collections of musical hymns that can typically be found in churches. Prayerbooks or missals are books that contain written prayers and are commonly carried by monks, nuns, and other devoted followers or clergy. Lap books are a learning tool created by students.&lt;/h1&gt;
 
 &lt;h3 id=&quot;there-are-several-other-types-of-books-which-are-not-commonly-found-under-this-system-albums-are-books-for-holding-a-group-of-items-belonging-to-a-particular-theme-such-as-a-set-of-photographs-card-collections-and-memorabilia-one-common-example-is-stamp-albums-which-are-used-by-many-hobbyists-to-protect-and-organize-their-collections-of-postage-stamps-such-albums-are-often-made-using-removable-plastic-pages-held-inside-in-a-ringed-binder-or-other-similar-holder-picture-books-are-books-for-children-with-pictures-on-every-page-and-less-text-or-even-no-text&quot;&gt;There are several other types of books which are not commonly found under this system. Albums are books for holding a group of items belonging to a particular theme, such as a set of photographs, card collections, and memorabilia. One common example is stamp albums, which are used by many hobbyists to protect and organize their collections of postage stamps. Such albums are often made using removable plastic pages held inside in a ringed binder or other similar holder. Picture books are books for children with pictures on every page and less text (or even no text).&lt;/h3&gt;
 
@@ -51,8 +72,8 @@
 &lt;p&gt;Paper was first made in China as early as 200 BC, and reached Europe through Muslim territories. At first made of rags, the industrial revolution changed paper-making practices, allowing for paper to be made out of wood pulp. Papermaking in Europe began in the 11th century, although vellum was also common there as page material up until the beginning of the 16th century, vellum being the more expensive and durable option.&lt;/p&gt;
 </description>
                 <pubDate>Fri, 24 Apr 2020 22:01:35 +1000</pubDate>
-                <link>https://someoneelsescloud.github.io/blog/build-website-azure-actions-jeykll-terraform</link>
-                <guid isPermaLink="true">https://someoneelsescloud.github.io/blog/build-website-azure-actions-jeykll-terraform</guid>
+                <link>https://someoneelsescloud.github.io/blog/build-website-azure-actions-jekyll-terraform</link>
+                <guid isPermaLink="true">https://someoneelsescloud.github.io/blog/build-website-azure-actions-jekyll-terraform</guid>
                 
                 <category>github-actions</category>
                 
