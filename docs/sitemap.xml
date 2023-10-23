@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://someoneelsescloud.github.io/confessions/</loc>
-<lastmod>2023-09-30T07:14:44+10:00</lastmod>
+<lastmod>2023-10-23T20:08:41+11:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/elements/</loc>
-<lastmod>2023-09-30T07:14:44+10:00</lastmod>
+<lastmod>2023-10-23T20:08:41+11:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/tags/</loc>
-<lastmod>2023-09-30T07:14:44+10:00</lastmod>
+<lastmod>2023-10-23T20:08:41+11:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/blog/build-website-azure-actions-jekyll-terraform-copy</loc>
@@ -63,6 +63,14 @@
 <url>
 <loc>https://someoneelsescloud.github.io/work/traveling-to-sydney-for-expertslive</loc>
 <lastmod>2023-09-21T22:01:35+10:00</lastmod>
+</url>
+<url>
+<loc>https://someoneelsescloud.github.io/work/my-home-office-desk-setup-productivity-in-2023-copy</loc>
+<lastmod>2023-10-07T23:01:35+11:00</lastmod>
+</url>
+<url>
+<loc>https://someoneelsescloud.github.io/work/setup-wsl-vscode-terraform-azure</loc>
+<lastmod>2023-10-22T23:01:35+11:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/blog/</loc>
