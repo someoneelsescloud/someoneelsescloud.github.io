@@ -6,22 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Blog</title>
-  <meta name='description' content='Check out my latest blogs.'>
+  <title>Learn How to Create Terraform Modules for Azure</title>
+  <meta name='description' content='Create your first Terraform Module to use in Azure! We will walk-through, the standard terraform code and how to generalise it into a module. I’ll run throug...'>
 
-  <link rel="canonical" href="https://someoneelsescloud.github.io/blog/">
+  <link rel="canonical" href="https://someoneelsescloud.github.io/blog/learn-how-to-create-terraform-modules-for-azure">
   <link rel="alternate" type="application/rss+xml" title="Someone Elses Cloud" href="/feed.xml">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Blog – Someone Elses Cloud">
-  <meta name="twitter:description" content="Check out my latest blogs.">
-  <meta name="twitter:image:src" content="">
+  <meta name="twitter:title" content="Learn How to Create Terraform Modules for Azure – Someone Elses Cloud">
+  <meta name="twitter:description" content="Create your first Terraform Module to use in Azure! We will walk-through, the standard terraform code and how to generalise it into a module. I’ll run through a demo to show you how to write code.">
+  <meta name="twitter:image:src" content="https://someoneelsescloud.github.io/images/2021-11-19/square.jpg">
 
   <!-- Facebook OpenGraph -->
-  <meta property="og:title" content="Blog – Someone Elses Cloud">
-  <meta property="og:description" content="Check out my latest blogs.">
-  <meta property="og:image" content="">
+  <meta property="og:title" content="Learn How to Create Terraform Modules for Azure – Someone Elses Cloud">
+  <meta property="og:description" content="Create your first Terraform Module to use in Azure! We will walk-through, the standard terraform code and how to generalise it into a module. I’ll run through a demo to show you how to write code.">
+  <meta property="og:image" content="https://someoneelsescloud.github.io/images/2021-11-19/square.jpg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -120,60 +120,129 @@
   <!-- begin content -->
   <main class="content" aria-label="Content">
     <div class="container">
-  <div class="page-section-head">
-    <h1 class="page-title">Blog</h1>
+  <div class="post-head">
+
+    <div class="post-info">
+
+      <h1 class="post-title">Learn How to Create Terraform Modules for Azure</h1>
+
+      
+
+      <!-- 
+        <div class="post-description">Create your first Terraform Module to use in Azure! We will walk-through, the standard terraform code and how to generalise it into a module. I’ll run through a demo to show you how to write code.</div>
+       -->
+
+      <div class="post-meta">
+        <div class="post-meta__left">
+          <a href="/about/" class="post-author-image">
+            <img class="lazy" data-src="/images/avatar.jpg" alt="Subscribe for Updates!">
+          </a>
+          <div class="post-meta__bottom">
+            <a class="post-author-name">Sunny</a>
+            <span class="post-date"><time datetime="2021-11-19T16:01:35+11:00">19 Nov 2021</time> –   1 min read </span>
+          </div>
+        </div>
+
+        <div class="post-meta__right">
+          <div class="post-share">
+            <ul class="share__list list-reset">
+              <li class="share__item">
+                <a class="share__link share__twitter"
+                  href="https://twitter.com/intent/tweet?text=Learn%20How%20to%20Create%20Terraform%20Modules%20for%20Azure&url=https://someoneelsescloud.github.io/blog/learn-how-to-create-terraform-modules-for-azure"
+                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                  title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>
+              </li>
+              <li class="share__item">
+                <a class="share__link share__facebook"
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://someoneelsescloud.github.io/blog/learn-how-to-create-terraform-modules-for-azure"
+                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                  title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>
+              </li>
+              <li class="share__item">
+                <a class="share__link share__pinterest"
+                  href="http://pinterest.com/pin/create/button/?url=https://someoneelsescloud.github.io/blog/learn-how-to-create-terraform-modules-for-azure&amp;media=https://someoneelsescloud.github.io/images/2021-11-19/square.jpg&amp;description=Learn%20How%20to%20Create%20Terraform%20Modules%20for%20Azure"
+                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+                  title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>
+              </li>
+              <li class="share__item">
+                <a class="share__link share__linkedin"
+                  href="https://www.linkedin.com/shareArticle?mini=true&url=https://someoneelsescloud.github.io/blog/learn-how-to-create-terraform-modules-for-azure&title=Learn%20How%20to%20Create%20Terraform%20Modules%20for%20Azure&summary=Create%20your%20first%20Terraform%20Module%20to%20use%20in%20Azure!%20We%20will%20walk-through,%20the%20standard%20terraform%20code%20and%20how%20to%20generalise%20it%20into%20a%20module.%20I%E2%80%99ll%20run%20through%20a%20demo%20to%20show%20you%20how%20to%20write%20code.&source="
+                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                  title="Share on LinkedIn" rel="nofollow"><i class="ion ion-logo-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+<!-- 
     
-      <p class="page-description">Check out my latest blogs.</p>
+    <div class="post-image">
+      <img class="lazy" data-src="/images/2021-11-19/square.jpg" alt="Learn How to Create Terraform Modules for Azure">
+    </div>
+    
+     -->
+
+  </div>
+</div>
+
+<!-- begin post -->
+<div class="container animate">
+  <article class="post">
+    <p><iframe src="https://www.youtube.com/embed/o9KD7lLrQvg" loading="lazy" width="1920" height="1080" frameborder="0" allowfullscreen=""></iframe></p>
+
+<p>Episode Code: <a href="https://github.com/someoneelsescloud/ep14_create_azure_terraform_module">https://github.com/someoneelsescloud/ep14_create_azure_terraform_module</a></p>
+
+<p><a href="https://learn.hashicorp.com/collections/terraform/modules">Hashicorp Learn - Reuse Configuration with Modules</a></p>
+<p><a href="https://www.terraform.io/docs/language/modules/index.html">Hashicorp - Modules Overview</a></p>
+<p><a href="https://www.terraform.io/docs/language/modules/develop/structure.html">Hashicorp - Module Structure</a></p>
+<p><a href="https://www.terraform.io/docs/language/modules/develop/index.html">Hashicorp - Creating Modules</a></p>
+<p><a href="https://registry.terraform.io/browse/modules">Terraform Module Registry</a></p>
+
+  </article>
+</div>
+<!-- end post -->
+
+<div class="container animate">
+  <div class="post__navigation">
+    
+
     
   </div>
 </div>
 
-<div class="container">
+
+
+
+
+
+
+
+
+<!-- begin related posts -->
+<div class="container animate">
   <div class="row">
     <div class="col col-12">
-      <div class="section-small">
-        <div class="section__inner grid">
+      <div class="section-small related-posts ">
+        <div class="section__info">
+          <h2 class="section__title">Related Posts</h2>
+        </div>
+        <div class="section__inner">
+        
           
-            
-              <div class="article animate grid__post">
+          
 
-  
-  <a class="article__image" href="/blog/learn-how-to-create-terraform-modules-for-azure">
-    <img class="lazy" data-src="/images/2021-11-19/square.jpg" alt="Learn How to Create Terraform Modules for Azure">
-  </a>
-  
+          
 
-  <div class="article__content">
-    
-
-    <h2 class="article__title">
-      <a href="/blog/learn-how-to-create-terraform-modules-for-azure">Learn How to Create Terraform Modules for Azure</a>
-    </h2>
-
-    <p class="article__excerpt">
-      Create your first Terraform Module to use in Azure! We will walk-through, the standard terraform code and how to generalise it into a module. I’ll run through a demo to show you how to write code.
-    </p>
-  </div>
-
-</div>
-            
+          
           
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-
-<script>
-  var base_url = "",
-    pagination_next_url = base_url + '/blog/page2',
-    pagination_next_page_number = '',
-    pagination_available_pages_number = '1';
-</script>
+<!-- end related posts -->
   </main>
   <!-- end content -->
 
