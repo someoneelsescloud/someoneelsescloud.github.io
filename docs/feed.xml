@@ -5,30 +5,9 @@
         <description>Just trying to automate my life in cloud.</description>
         <link>https://someoneelsescloud.github.io/</link>
         <atom:link href="https://someoneelsescloud.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 13 Jul 2025 08:34:45 +1000</pubDate>
-        <lastBuildDate>Sun, 13 Jul 2025 08:34:45 +1000</lastBuildDate>
+        <pubDate>Sun, 13 Jul 2025 09:18:24 +1000</pubDate>
+        <lastBuildDate>Sun, 13 Jul 2025 09:18:24 +1000</lastBuildDate>
         <generator>Jekyll v3.9.3</generator>
-        
-            <item>
-                <title>Learn How to Create Terraform Modules for Azure</title>
-                <description>&lt;p&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/o9KD7lLrQvg&quot; loading=&quot;lazy&quot; width=&quot;1920&quot; height=&quot;1080&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;Episode Code: &lt;a href=&quot;https://github.com/someoneelsescloud/ep14_create_azure_terraform_module&quot;&gt;https://github.com/someoneelsescloud/ep14_create_azure_terraform_module&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://learn.hashicorp.com/collections/terraform/modules&quot;&gt;Hashicorp Learn - Reuse Configuration with Modules&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.terraform.io/docs/language/modules/index.html&quot;&gt;Hashicorp - Modules Overview&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.terraform.io/docs/language/modules/develop/structure.html&quot;&gt;Hashicorp - Module Structure&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.terraform.io/docs/language/modules/develop/index.html&quot;&gt;Hashicorp - Creating Modules&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://registry.terraform.io/browse/modules&quot;&gt;Terraform Module Registry&lt;/a&gt;&lt;/p&gt;
-</description>
-                <pubDate>Fri, 19 Nov 2021 16:01:35 +1100</pubDate>
-                <link>https://someoneelsescloud.github.io/blog/learn-how-to-create-terraform-modules-for-azure</link>
-                <guid isPermaLink="true">https://someoneelsescloud.github.io/blog/learn-how-to-create-terraform-modules-for-azure</guid>
-                
-                
-                <category>DevOps</category>
-                
-            </item>
         
     </channel>
 </rss>
