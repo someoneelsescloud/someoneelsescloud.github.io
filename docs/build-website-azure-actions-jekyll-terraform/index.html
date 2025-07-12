@@ -6,22 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>My Practical Home Office Desk Setup for Productivity in 2023</title>
-  <meta name='description' content='In this video I walk through my current home office setup for 2023. I tried to keep things simple and practical with plants to add a touch of zen and make it...'>
+  <title>Build a Website in Azure using GitHub Actions, Jekyll and Terraform Cloud.</title>
+  <meta name='description' content='Build a Website with an Azure Static Web App and use GitHub Actions to manage your continuous deployment with Terraform Cloud for Infrastructure and Jekyll t...'>
 
-  <link rel="canonical" href="https://someoneelsescloud.github.io/work/my-home-office-desk-setup-productivity-in-2023-copy">
+  <link rel="canonical" href="https://someoneelsescloud.github.io/build-website-azure-actions-jekyll-terraform/">
   <link rel="alternate" type="application/rss+xml" title="Someone Elses Cloud" href="/feed.xml">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="My Practical Home Office Desk Setup for Productivity in 2023 – Someone Elses Cloud">
-  <meta name="twitter:description" content="In this video I walk through my current home office setup for 2023. I tried to keep things simple and practical with plants to add a touch of zen and make it a place to work and be productive.">
-  <meta name="twitter:image:src" content="https://someoneelsescloud.github.io/images/2023-10-07-square.jpg">
+  <meta name="twitter:title" content="Build a Website in Azure using GitHub Actions, Jekyll and Terraform Cloud. – Someone Elses Cloud">
+  <meta name="twitter:description" content="Build a Website with an Azure Static Web App and use GitHub Actions to manage your continuous deployment with Terraform Cloud for Infrastructure and Jekyll to generate your static website content.">
+  <meta name="twitter:image:src" content="https://someoneelsescloud.github.io/images/2023-05-13/square-website-automation.jpg">
 
   <!-- Facebook OpenGraph -->
-  <meta property="og:title" content="My Practical Home Office Desk Setup for Productivity in 2023 – Someone Elses Cloud">
-  <meta property="og:description" content="In this video I walk through my current home office setup for 2023. I tried to keep things simple and practical with plants to add a touch of zen and make it a place to work and be productive.">
-  <meta property="og:image" content="https://someoneelsescloud.github.io/images/2023-10-07-square.jpg">
+  <meta property="og:title" content="Build a Website in Azure using GitHub Actions, Jekyll and Terraform Cloud. – Someone Elses Cloud">
+  <meta property="og:description" content="Build a Website with an Azure Static Web App and use GitHub Actions to manage your continuous deployment with Terraform Cloud for Infrastructure and Jekyll to generate your static website content.">
+  <meta property="og:image" content="https://someoneelsescloud.github.io/images/2023-05-13/square-website-automation.jpg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -111,16 +111,16 @@
 
     <div class="row">
 
-          <h1 class="page-title">My Practical Home Office Desk Setup for Productivity in 2023</h1>
+          <h1 class="page-title">Build a Website in Azure using GitHub Actions, Jekyll and Terraform Cloud.</h1>
           
-          <p class="page-description">In this video I walk through my current home office setup for 2023. I tried to keep things simple and practical with plants to add a touch of zen and make it a place to work and be productive.</p>
+          <p class="page-description">Build a Website with an Azure Static Web App and use GitHub Actions to manage your continuous deployment with Terraform Cloud for Infrastructure and Jekyll to generate your static website content.</p>
           
           <ul class="work-meta list-reset">
             <!-- 
-            <li class="work-meta__item"><strong>Category:</strong> <span>Equipment</span></li>
+            <li class="work-meta__item"><strong>Category:</strong> <span>DevOps</span></li>
             
             
-            <li class="work-meta__item"><strong>Date:</strong> <span>07 Oct 2023</span></li>
+            <li class="work-meta__item"><strong>Date:</strong> <span>13 May 2023</span></li>
              -->
             
             
@@ -133,48 +133,528 @@
 <div class="container animate">
 
   <div class="page">
-    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/GOSxT7aMckk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></p>
+    <p><iframe src="https://www.youtube.com/embed/29r8FFi3G5M" loading="lazy" width="1920" height="1080" frameborder="0" allowfullscreen=""></iframe></p>
 
-<h2 id="desk-and-chair">Desk and Chair:</h2>
+<p>I have been looking at moving away from <a href="https://www.squarespace.com/">Square Space</a> and thought I would look at  free hosting options.</p>
 
-<p><a href="https://amzn.to/48EqiPV">Zinus Soho Office Desk</a></p>
+<p>There’s multiple options out there, such as AWS S3 buckets, Azure Storage Accounts, Azure Static Web App and GitHub Pages. These days, you don’t even need to purchase a domain name, GitHub pages is probably the more favoured option as you get a username.github.io domain name if you didn’t want to pay for a custom domain name!</p>
 
-<p><a href="https://amzn.to/3LRe1h8">Zumist Dual Monitor Stand</a></p>
+<p>But I thought I would create this video and show all the technologies used in the real world today. The workflow in this video is a very common approach in today’s world working with  Cloud technologies. Initially there will be manual processes to setup the accounts and integration but once set up, its as easy as just pushing code to make future updates!</p>
 
-<p><a href="https://shorturl.at/fqwE7">Samsung View Finity S50C 34” Ultrawide</a></p>
+<p>Not to mention that this is a foundation where by you can enhance with A/B deployments, include throughout checks and testing before deploying, enforcing security controls or even scanning for bad practices!</p>
 
-<p><a href="https://shorturl.at/ilmnq">BLECKBERGET office chair</a></p>
+<p>Really this is quite an over engineered scenario for your own personal page but its a fun project to learn different technologies and how they integrate!</p>
 
-<h2 id="accessories">Accessories:</h2>
+<blockquote>
+  <p><a href="#">… and did I mention <strong>everything is <u>FREE!</u></strong></a></p>
+</blockquote>
 
-<p><a href="https://amzn.to/3LOThqh">Dell D6000 Type C Dock</a></p>
+<p>So lets get started with setting up the configuration!</p>
 
-<p><a href="https://amzn.to/3ZLuSHT">Logitech MX Mini Wireless Keyboard</a></p>
+<p><img src="/images/2023-05-13/overview-v3.jpg" alt="Overview" title="Overview" /></p>
 
-<p><a href="https://amzn.to/45khATZ">Logitech MX Vertical Mouse</a></p>
+<h2 id="overview">Overview</h2>
+<ul>
+  <li><a href="#pre-requisites">Pre-requisites</a></li>
+  <li><a href="#1-setup-terraform-cloud-workspace">1. Setup Terraform Cloud Workspace</a></li>
+  <li><a href="#2-create-a-service-principal">2. Create a Service Principal</a></li>
+  <li><a href="#3-assign-service-principal-permissions">3. Assign Service Principal Permissions</a></li>
+  <li><a href="#4-create-terraform-workspace-variables-for-azure-authentication">4. Create Terraform Workspace Variables for Azure Authentication</a></li>
+  <li><a href="#5-create-github-repository">5. Create GitHub Repository</a></li>
+  <li><a href="#6-create-terraform-workspace-variables-for-github-authentication">6. Create Terraform Workspace Variables for GitHub Authentication</a></li>
+  <li><a href="#7-configure-terraform-token-as-github-actions-secret">7. Configure Terraform Token as GitHub Actions Secret</a></li>
+  <li><a href="#8-setup-your-repository-with-the-demo-code">8. Setup Your Repository with the Demo Code</a></li>
+  <li><a href="#9-build-a-jekyll-website">9. Build a Jekyll Website</a></li>
+  <li><a href="#10-deploy-your-code">10. Deploy your Code</a></li>
+  <li><a href="#11-locate-your-website-url">11. Locate your Website URL</a></li>
+</ul>
 
-<p><a href="https://amzn.to/3ROsApF">Kensington 14” Smartfit Foldable Stand</a></p>
+<h1 id="pre-requisites">Pre-requisites</h1>
+<ul>
+  <li><strong>Download Terraform (optional as Terraform Cloud is utilised via the workflow)</strong>
+    <ul>
+      <li>Install Terraform locally to run init, plans and apply. This is optional as GitHub Actions will invoke commands to Terraform Cloud.
+        <ol>
+          <li>Browse to <a href="https://developer.hashicorp.com/terraform/downloads">HashiCorp - Install Terraform</a></li>
+          <li>Extract your tools folder e.g. (C:\Workspace\Terraform)</li>
+          <li>Add the Path your Environment Path (Optional - For Convenience) - (<a href="https://www.computerhope.com/issues/ch000549.htm">Windows</a> or <a href="https://linuxize.com/post/how-to-add-directory-to-path-in-linux/">Linux</a>)</li>
+          <li>Run command to setup your local Terraform Cloud token:
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>terraform login
+</code></pre></div>            </div>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Setup a Terraform Cloud Account</strong>
+    <ul>
+      <li>Register at <a href="https://app.terraform.io/public/signup/account">Terraform</a></li>
+    </ul>
+  </li>
+  <li><strong>Setup an Azure Account</strong>
+    <ul>
+      <li>Register at <a href="https://azure.microsoft.com/en-us/free/">Microsoft Azure</a></li>
+    </ul>
+  </li>
+  <li><strong>Setup a GitHub Account</strong>
+    <ul>
+      <li>Sign Up at <a href="https://github.com/signup">GitHub</a></li>
+    </ul>
+  </li>
+  <li><strong>Setup Jekyll</strong> (or your choice of software)
+    <ul>
+      <li>Download and Setup Up <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">Jekyll</a></li>
+    </ul>
+  </li>
+</ul>
 
-<h2 id="audio-and-webcam">Audio and Webcam:</h2>
+<h1 id="1-setup-terraform-cloud-workspace">1. Setup Terraform Cloud Workspace</h1>
+<p>Terraform workspace to create and manage Azure resources.</p>
+<ol>
+  <li>Log into <strong><a href="https://app.terraform.io/app">Terraform Cloud</a></strong></li>
+  <li>Under <strong>Projects &amp; Workspaces</strong></li>
+</ol>
 
-<p><a href="https://amzn.to/45ePhGJ">Logitech C920 HD Webcam</a></p>
+<p><img src="/images/2023-05-13/projects-workspaces.png" alt="Alt text" title="Projects &amp; Workspaces" /></p>
+<ol>
+  <li>Click <strong>Create Workspace</strong> or <strong>New</strong> and Select <strong>Workspace</strong></li>
+</ol>
 
-<p><a href="https://shorturl.at/fnpqY">Sony SRS X7 Bluetooth Speaker</a></p>
+<p><img src="/images/2023-05-13/new-workspace.png" alt="Alt text" title="New Workspace" /></p>
+<ol>
+  <li>Select <strong>API Driven Workflow</strong></li>
+</ol>
 
-<p><a href="https://amzn.to/46keC35">RØDE VideoMic GO II</a></p>
+<p><img src="/images/2023-05-13/api-driven.png" alt="Alt text" title="API Driven Workflow" /></p>
+<ol>
+  <li>Enter a <strong>Name</strong> for your <strong>Workspace</strong></li>
+  <li>Select a <strong>Project</strong> or leave as <strong>Default Project</strong></li>
+  <li>Click <strong>Create Workspace</strong></li>
+</ol>
 
-<p><a href="https://amzn.to/3rIlmZJ">Small Rig Articulating Arm</a></p>
+<p><img src="/images/2023-05-13/name-workspace.png" alt="Alt text" title="Name Workspace" /></p>
+<ol>
+  <li>Once created you will see the <strong>Waiting for Configuration</strong> page</li>
+</ol>
 
-<p><a href="https://amzn.to/3RIcDBn">Rode RM5 Mic Mount</a></p>
+<p><img src="/images/2023-05-13/wait-config.png" alt="Alt text" title="Waiting for Configuration" /></p>
 
-<h2 id="decor-and-lights">Decor and Lights:</h2>
-<p><a href="https://amzn.to/46fJe5S">DAWNTREES Desk Mat</a></p>
+<h1 id="2-create-a-service-principal">2. Create a Service Principal</h1>
+<p>This service principal will be used to by the Terraform AzureRM provider to manage Azure.</p>
+<ol>
+  <li>Log into <strong><a href="https://portal.azure.com">Azure Portal</a></strong></li>
+  <li>Browse to <strong>Azure Active Directory</strong></li>
+  <li>Click <strong>App Registrations</strong></li>
+  <li>Click <strong>New Registration</strong></li>
+  <li>Enter a <strong>Name</strong></li>
+  <li>Select <strong>Accounts in this organizational directory only</strong></li>
+</ol>
 
-<p><a href="https://shorturl.at/akxS5">Ikea Skadis Peg Board and Accesories</a></p>
+<p><img src="/images/2023-05-13/app-registration.png" alt="Alt text" title="App Registration" /></p>
+<ol>
+  <li>Click <strong>Register</strong></li>
+  <li>Once Done, Click <strong>Certificates &amp; Secrets</strong></li>
+  <li>Under <strong>Client Secrets</strong>, Select <strong>+ New Client Secret</strong></li>
+</ol>
 
-<p><a href="https://amzn.to/45eJqRG">Vijim VL120 LED RGB Light</a></p>
+<p><img src="/images/2023-05-13/create-secret.png" alt="Create Secret" title="Create Secret" /></p>
+<ol>
+  <li>Enter a <strong>Description</strong> and Set an <strong>Expiry</strong></li>
+</ol>
 
-<p><a href="https://amzn.to/3Fcg6At">Xiaomi Monitor Light</a></p>
+<p><img src="/images/2023-05-13/add-secret.png" alt="Add Secret" title="Add Secret" /></p>
+<ol>
+  <li>Click <strong>Add</strong></li>
+  <li><a href="#">Take Note of the Secret</a> under <strong>Value</strong> (leave this screen as it is or copy the secret as it will disappear once you navigate awy from this screen!)</li>
+  <li>Open a New Azure Portal tab for the next step!</li>
+</ol>
+
+<h1 id="3-assign-service-principal-permissions">3. Assign Service Principal Permissions</h1>
+<p>This will be the role assignments that will give the service principal access to create and manage  Azure resources.</p>
+<ol>
+  <li>Browse to the resource (in this example <strong>Subscriptions</strong>)</li>
+  <li>Select <strong>Access Control (IAM)</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/iam.png" alt="Access Control (IAM)" title="Access Control (IAM)" /></p>
+<ol>
+  <li>Click <strong>+ Add</strong></li>
+  <li>Select <strong>Add Role Assignment</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/role-assignment.png" alt="Add Role Assignment" title="Add Role Assignment" /></p>
+<ol>
+  <li>Under <strong>Assignment Type</strong>, Select <strong>Privileged Administrator Roles</strong></li>
+  <li>Click <strong>Next</strong></li>
+  <li>Under <strong>Assignment Type</strong>, Enter the Permissions (in this example it will be <strong>Contributor</strong>)</li>
+</ol>
+
+<p><img src="/images/2023-05-13/contributor.png" alt="Contributor" title="Contributor" /></p>
+<ol>
+  <li>Click <strong>Next</strong></li>
+  <li>Under <strong>Assign Access To</strong>, Select <strong>User, Group, Or Service Principal</strong></li>
+  <li>Under <strong>Members</strong>, Click <strong>Select Members</strong></li>
+  <li><strong>Locate</strong> your Service Principal and Click <strong>Select</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/select-sp.png" alt="Select Service Principal" title="Select Service Principal" /></p>
+<ol>
+  <li>Click <strong>Next</strong></li>
+  <li>Click <strong>Review + Assign</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/assignment-success.png" alt="Assignment Success" title="Assignment Success" /></p>
+<ol>
+  <li>You should now have the Service Principal under the Role Assignments!</li>
+</ol>
+
+<p><img src="/images/2023-05-13/assignment-done.png" alt="Role Assignment Complete" title="Role Assignment Complete" /></p>
+
+<h1 id="4-create-terraform-workspace-variables-for-azure-authentication">4. Create Terraform Workspace Variables for Azure Authentication</h1>
+<p>These variables will be used to authentication the Terraform AzureRM provider.</p>
+<ol>
+  <li>Log into <strong><a href="https://app.terraform.io/app">Terraform Cloud</a></strong></li>
+  <li>Under <strong>Projects &amp; Workspaces</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/projects-workspaces.png" alt="Alt text" title="Projects &amp; Workspaces" /></p>
+<ol>
+  <li>Locate and Select your <strong>Terraform Workspace</strong></li>
+  <li>Click <strong>Variables</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/workspace-variables.png" alt="Workspace Variables" title="Workspace Variables" /></p>
+<ol>
+  <li>Now you will need get the details from above ( <strong>Create a Service Principal</strong> above)</li>
+  <li>Under <strong>Workspace Variables</strong>, Select <strong>+ Add Variable</strong></li>
+  <li>Now Create the Following Variables:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>client_id</strong></td>
+      <td>Client ID (also known as the Application ID) of your Service Principal</td>
+    </tr>
+    <tr>
+      <td><strong>client_secret</strong></td>
+      <td>Client Secret of your Service Principal</td>
+    </tr>
+    <tr>
+      <td><strong>subscription_id</strong></td>
+      <td>Subscription ID of where you have assigned your Service Principal Role Assignments</td>
+    </tr>
+    <tr>
+      <td><strong>tenant_id</strong></td>
+      <td>Tenant ID of your Azure Tenant</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Once done you should have a screen as below!</li>
+</ol>
+
+<blockquote>
+  <p><a href="#">Don’t forget to mark your secrets as sensitive as they can be used to access your subscription.</a>
+<img src="/images/2023-05-13/create-workspace-variables.png" alt="Create Workspace Variables" title="Create Workspace Variables" /></p>
+</blockquote>
+
+<h1 id="5-create-github-repository">5. Create GitHub Repository</h1>
+<p>This repository will be used to store the Terraform code and GitHub Actions Workflow.</p>
+<ol>
+  <li>Log into <strong><a href="https://github.com">GitHub.com</a></strong></li>
+  <li>Click <strong>New</strong></li>
+  <li>Enter a <strong>Repository Name</strong></li>
+  <li>Enter a <strong>Description</strong></li>
+  <li>Set the Repository to <strong>Public</strong></li>
+  <li>Select <strong>Initialize this repository with</strong>: Check <strong>Add  a README file</strong></li>
+  <li>Select <strong>Add .gitignore</strong> and Select <strong>Terraform</strong></li>
+  <li>Click <strong>Create Repository</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/new-repo.png" alt="Alt text" title="New Repository" /></p>
+
+<h1 id="6-create-terraform-workspace-variables-for-github-authentication">6. Create Terraform Workspace Variables for GitHub Authentication</h1>
+<p>This token will be used with GitHub Actions to create a Secret via Terraform, which will be used to publish the website.</p>
+<ol>
+  <li>Log into <strong><a href="https://github.com">GitHub.com</a></strong></li>
+  <li>Click on your <strong>Profile</strong> and Select <strong>Settings</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/github-settings.png" alt="Profile Settings" title="Profile Settings" /></p>
+<ol>
+  <li>Scroll to the bottom and Click <strong>Developer Settings</strong></li>
+  <li>Under <strong>Personal Access Tokens</strong>, Select <strong>Fine-Grained Tokens</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/fine-grained-tokens.png" alt="Fine-Grained Tokens" title="Fine-Grained Tokens" /></p>
+<ol>
+  <li>Configure (as Required):</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Configuration</th>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Token Name</strong></td>
+      <td>AZURE_STATIC_WEB_APPS_API_TOKEN</td>
+      <td>NA</td>
+      <td>Name for your token, this will appear in the GitHub UI</td>
+    </tr>
+    <tr>
+      <td><strong>Expiration</strong></td>
+      <td>30 Days</td>
+      <td>NA</td>
+      <td>This is up to you, ideally you should frequently rotate this on a regular basis</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td>Azure Static Web App API Token</td>
+      <td>NA</td>
+      <td>Description for your Token</td>
+    </tr>
+    <tr>
+      <td><strong>Repository Access</strong></td>
+      <td>Only Select Repositories</td>
+      <td>Select Your Repository Name</td>
+      <td>You should also go with the least privileged access controls to mitigate risks</td>
+    </tr>
+    <tr>
+      <td><strong>Metadata</strong></td>
+      <td>Read-Only (Mandatory Default)</td>
+      <td>NA</td>
+      <td>This is a Mandatory Configuration item</td>
+    </tr>
+    <tr>
+      <td><strong>Permissions</strong></td>
+      <td>Repository Permissions &gt; Actions</td>
+      <td>Read-Only</td>
+      <td>Required to Read the GitHub Actions Workflow</td>
+    </tr>
+    <tr>
+      <td><strong>Permissions</strong></td>
+      <td>Repository Permissions&gt; Secrets</td>
+      <td>Read and Write</td>
+      <td>Required to create the GitHub Actions Workflow Secret</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Click <strong>Generate Token</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/generate-token.png" alt="Generate Token" title="Generate Token" /></p>
+<ol>
+  <li><strong>Copy</strong> the <strong>Personal Access Token</strong> (PAT)</li>
+  <li>Go back to Step 4 above to create a new <strong>Workspace Variable</strong> named <strong>GITHUB_TOKEN</strong></li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>GITHUB_TOKEN</strong></td>
+      <td>GitHub Token to be able to Create the GitHub Actions Workflow Secret - <strong>Note</strong>: This is case sensitive and needs to align with the variables.tf file</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/2023-05-13/github-variable.png" alt="GitHub Variable" title="GitHub Variable" /></p>
+<blockquote>
+  <p><a href="#">Don’t forget to mark your secrets as sensitive as they can be used to access your subscription.</a></p>
+</blockquote>
+
+<h1 id="7-configure-terraform-token-as-github-actions-secret">7. Configure Terraform Token as GitHub Actions Secret</h1>
+<p>This will be used with GitHub Actions to interface with Terraform Cloud via CLI.</p>
+<ol>
+  <li>Log into <strong><a href="https://app.terraform.io/app">Terraform Cloud</a></strong></li>
+  <li>Click on your <strong>Profile</strong></li>
+  <li>Click <strong>User Settings</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/tf-profile.png" alt="Alt text" title="Terraform Profile" /></p>
+<ol>
+  <li>Click <strong>Tokens</strong></li>
+  <li>Click <strong>Create an API Token</strong></li>
+  <li>Enter a <strong>Name</strong> and <strong>Expiration</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/create-token.png" alt="Alt text" title="Create Token" /></p>
+<ol>
+  <li>Click <strong>Generate Token</strong></li>
+  <li><strong>Copy the Token</strong></li>
+  <li>Browse back to <strong><a href="https://github.com">GitHub.com</a></strong></li>
+  <li>Find the newly created repository and Click <strong>Settings</strong></li>
+  <li>Under <strong>Security</strong>, Select <strong>Secrets and Variables</strong> then Select <strong>Actions</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/github-secrets.png" alt="Alt text" title="GitHub Secrets" /></p>
+<ol>
+  <li>Under Secrets, Select <strong>New Repository Secret</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/new-secret.png" alt="Alt text" title="New Repository Secret" /></p>
+<ol>
+  <li>Enter a <strong>Name</strong> for the <strong>Secret</strong> (example is TF_API_TOKEN)</li>
+  <li>In the <strong>Secret</strong> box, Paste the above <strong>API Token</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/actions-secret.png" alt="Alt text" title="Actions Secret" /></p>
+<ol>
+  <li>Click <strong>Add Secret</strong></li>
+  <li>Now you should have a new secret under <strong>Repository Secrets</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/api-token.png" alt="Alt text" title="API Token" /></p>
+
+<h1 id="8-setup-your-repository-with-the-demo-code">8. Setup Your Repository with the Demo Code</h1>
+<p>So next up, we will write some simple Terraform code to deploy the resource group and static web app.
+Clone my repository which has all the Terraform code and GitHub Actions Workflow.</p>
+<ol>
+  <li>Log into <strong><a href="https://github.com">GitHub.com</a></strong></li>
+  <li>Clone the above repository: <strong><a href="https://github.com/someoneelsescloud/azure_website_actions_terraform">azure_website_actions_terraform</a></strong></li>
+  <li>Copy all the Terraform files (*.tf) to your <strong>NEW REPOSITORY</strong> created in step <a href="#6-create-github-repository">6. Create GitHub Repository</a></li>
+  <li>Update the following configuration:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Filename</th>
+      <th>Configuration</th>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>providers.tf</strong></td>
+      <td>Terraform &gt; Cloud</td>
+      <td>Organization</td>
+      <td>Add your Terraform Cloud Organization Name</td>
+    </tr>
+    <tr>
+      <td><strong>providers.tf</strong></td>
+      <td>Terraform &gt; workspaces</td>
+      <td>Name</td>
+      <td>Add your Terraform Cloud Workspace Name</td>
+    </tr>
+    <tr>
+      <td><strong>main.tf</strong></td>
+      <td>locals &gt; repo_name</td>
+      <td>NA</td>
+      <td>Add your Repository Name</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Copy the <strong>.github/workflows/website-automation.txt</strong> folder to your  <strong>NEW REPOSITORY</strong></li>
+  <li>Rename the file <strong>website-automation.txt</strong> to <strong>website-automation.yaml</strong> (this was named as a txt so my repo does try and the GitHub Actions Workflow everytime!)</li>
+</ol>
+
+<h1 id="9-build-a-jekyll-website">9. Build a Jekyll Website</h1>
+<p>This is an option step, you can choose software of your choice. Once you have website code, it will need to be updated to the /src folder in your repository. The following steps are from the <a href="https://jekyllrb.com/docs/">Jekyll - Quick Start</a> page. This was run on WSL Ubuntu.</p>
+
+<p>You can also get Jekyll templates from <a href="https://jekyllthemes.io/free">here</a>. We’ll be using the <a href="https://github.com/thiagorossener/jekflix-template">Jekflix Template</a> in this demo.</p>
+<ol>
+  <li>Install <strong>Gem</strong> and <strong>Jekyll</strong> by running:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo gem install jekyll bundler
+</code></pre></div>    </div>
+  </li>
+  <li>Browse to a temp directory. This will become your local website development directory</li>
+  <li>Create a new Jekyll website by running:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo jekyll new mywebsite
+</code></pre></div>    </div>
+  </li>
+  <li>Browse to the <code class="language-plaintext highlighter-rouge">mywebsite</code> folder:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd mywebsite
+</code></pre></div>    </div>
+  </li>
+  <li>Now build the website with Jekyll:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll build --destination &lt;path-to-repo&gt;/src
+</code></pre></div>    </div>
+  </li>
+  <li>Now in your repository folder you should have a <strong>/src</strong> folder with html files.</li>
+</ol>
+
+<h1 id="10-deploy-your-code">10. Deploy your Code</h1>
+<p>Your repository should look something along the lines of:</p>
+
+<p><img src="/images/2023-05-13/repo-files.png" alt="Repo Files" title="Repo Files" /></p>
+<ol>
+  <li>Now merge your code into master
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit -m "initial upload"
+git push
+</code></pre></div>    </div>
+  </li>
+  <li>Once your code is merged, open <strong><a href="https://github.com">GitHub.com</a></strong></li>
+  <li>Click <strong>Actions</strong></li>
+  <li>Under <strong>All Workflows</strong>, Select the <strong>Running Workflow</strong>
+    <blockquote>
+      <p><a href="#"><strong>Note</strong>: You might will get an initial failure because your <strong>github_actions_secret</strong> is created but it appears that the workflow does not update for the next stage, so it needs to be run again!</a></p>
+    </blockquote>
+  </li>
+</ol>
+
+<p><img src="/images/2023-05-13/token-error.png" alt="Token Error" title="Token Error" /></p>
+<ol>
+  <li>If you get the above error, you can open the failed job and Click <strong>Re-Run Jobs</strong> and Select <strong>Re-Run All Jobs</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/re-run-jobs.png" alt="Re-Run All Jobs" title="Re-Run All Jobs" /></p>
+
+<h1 id="11-locate-your-website-url">11. Locate your Website URL</h1>
+<ol>
+  <li>Log into <strong><a href="https://portal.azure.com">Azure Portal</a></strong></li>
+  <li>Locate your Resource Group (this will be in the Plan / Apply outputs from your GitHub Actions runs)</li>
+  <li>Click on the <strong>Static Web App</strong></li>
+  <li>Locate the <strong>URL</strong> and this is your <strong>Website URL</strong></li>
+</ol>
+
+<p><img src="/images/2023-05-13/website-url.png" alt="Website URL" title="Website URL" /></p>
+
+<blockquote>
+  <p><a href="#">If you want to make changes to your website, all you need to do is push code to the <strong>/src</strong> folder and the GitHub Actions Workflow will republish your website!</a></p>
+</blockquote>
+
+<h3 id="learn-more-at-the-following">Learn more at the following:</h3>
+<p>You can learn more from the links below!</p>
+
+<p><strong>- <a href="https://developer.hashicorp.com/terraform/tutorials/automation/github-actions">HashiCorp - Automate Terraform with GitHub Actions</a></strong><br />
+<strong>- <a href="https://developer.hashicorp.com/terraform/tutorials/cloud-get-started">HashiCorp - Get Started - Terraform Cloud</a></strong><br />
+<strong>- <a href="https://docs.github.com/en/actions/quickstart">Quickstart for GitHub Actions</a></strong><br />
+<strong>- <a href="https://docs.github.com/en/actions/learn-github-actions">Learn GitHub Actions</a></strong><br />
+<strong>- <a href="https://azure.microsoft.com/en-us/products/app-service/static/">Microsoft - Static Web Apps</a></strong><br />
+<strong>- <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">Jekyll - Getting Started</a></strong></p>
+
+<p>And that is it! You should now have a new website and this is generally how infrastructure and applications are managed in larger environments. Obviously there’s more controls such a code approvers, tighter security controls around access and networking but this was a cool project to experience multiple technologies and did I mention.. everything is free!</p>
+
+<p>Hope you enjoyed this blog and the YouTube video!</p>
+
+<p>Cheers<br />
+Sunny</p>
 
 
   </div>
@@ -193,16 +673,16 @@
           
           <article class="work col col-6 col-d-12">
             <div class="work__content">
-              <a href="/work/traveling-to-sydney-for-expertslive" class="work__image">
-                <img class="lazy" data-src="/images/2023-09-21/square.jpg" alt="Cloud Diaries - Traveling to Sydney for ExpertsLive to Learn, Network and Be Inspired!">
+              <a href="/experience-taking-az-500-azure-security-exam/" class="work__image">
+                <img class="lazy" data-src="/images/2023-03-14/az-500.jpg" alt="My experience in taking the AZ-500 Microsoft Azure Security Technologies Exam">
               </a>
               <div class="work__info">
                 
-                <div class="work__category">Cloud Diaries</div>
+                <div class="work__category">Certification</div>
                 
-                <h3 class="work__title"><a href="/work/traveling-to-sydney-for-expertslive">Cloud Diaries - Traveling to Sydney for ExpertsLive to Learn, Network and Be Inspired!</a></h3>
+                <h3 class="work__title"><a href="/experience-taking-az-500-azure-security-exam/">My experience in taking the AZ-500 Microsoft Azure Security Technologies Exam</a></h3>
                 
-                <p class="work__description">I travelled to Sydney for the ExpertsLiveAU event this week, it was held at the Microsoft office in North Sydney. I thought I would create a short vlog of the journey and share with you some highlights of the event! Looking forward to next year!</p>
+                <p class="work__description">I share with you my experience in taking the AZ-500 Microsoft Azure Security Technologies Exam in 2023. I will talk about the Cyber Security certifcation path, details around the exam, things to consider and tips if you plan on taking the exam!</p>
                 
               </div>
             </div>
@@ -211,16 +691,16 @@
           
           <article class="work col col-6 col-d-12">
             <div class="work__content">
-              <a href="/work/setup-wsl-vscode-terraform-azure" class="work__image">
-                <img class="lazy" data-src="/images/2023-10-22-square.jpg" alt="How I setup WSL + VS Code + Terraform + Oh-My-Posh for Azure | DevOps | Cloud Engineer">
+              <a href="/build-website-github-pages-jekyll/" class="work__image">
+                <img class="lazy" data-src="/images/2023-05-25/thumbnail-square.jpg" alt="Create a FREE Website with GitHub Pages and Jekyll.">
               </a>
               <div class="work__info">
                 
                 <div class="work__category">DevOps</div>
                 
-                <h3 class="work__title"><a href="/work/setup-wsl-vscode-terraform-azure">How I setup WSL + VS Code + Terraform + Oh-My-Posh for Azure | DevOps | Cloud Engineer</a></h3>
+                <h3 class="work__title"><a href="/build-website-github-pages-jekyll/">Create a FREE Website with GitHub Pages and Jekyll.</a></h3>
                 
-                <p class="work__description">In this video, I share with you my minimalist setup for DevOps and Cloud Engineers: WSL, VS Code, Terraform, and Oh-My-Posh for Azure. Streamline your workflow! #Azure #DevOps #CloudEngineering</p>
+                <p class="work__description">Create a FREE Website with GitHub Pages and Jekyll in less than 10 minutes! No need to know HTML code or CCS because everything is in markdown!</p>
                 
               </div>
             </div>

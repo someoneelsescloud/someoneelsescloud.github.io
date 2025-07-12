@@ -6,22 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Build a Website in Azure using GitHub Actions, Jekyll and Terraform Cloud.</title>
-  <meta name='description' content='Build a Website with an Azure Static Web App and use GitHub Actions to manage your continuous deployment with Terraform Cloud for Infrastructure and Jekyll t...'>
+  <title>Master Terraform State - What Every Engineer Must Know</title>
+  <meta name='description' content='Master Terraform state with essential commands every engineer needs. Learn how to import, move, remove, unlock, backup, and restore your state safely!'>
 
-  <link rel="canonical" href="https://someoneelsescloud.github.io/work/build-website-azure-actions-jekyll-terraform">
+  <link rel="canonical" href="https://someoneelsescloud.github.io/master-terraform-state-what-every-engineer-must-know/">
   <link rel="alternate" type="application/rss+xml" title="Someone Elses Cloud" href="/feed.xml">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Build a Website in Azure using GitHub Actions, Jekyll and Terraform Cloud. – Someone Elses Cloud">
-  <meta name="twitter:description" content="Build a Website with an Azure Static Web App and use GitHub Actions to manage your continuous deployment with Terraform Cloud for Infrastructure and Jekyll to generate your static website content.">
-  <meta name="twitter:image:src" content="https://someoneelsescloud.github.io/images/2023-05-13/square-website-automation.jpg">
+  <meta name="twitter:title" content="Master Terraform State - What Every Engineer Must Know – Someone Elses Cloud">
+  <meta name="twitter:description" content="Master Terraform state with essential commands every engineer needs. Learn how to import, move, remove, unlock, backup, and restore your state safely!">
+  <meta name="twitter:image:src" content="https://someoneelsescloud.github.io/images/master-terraform-state-thumbnail.png">
 
   <!-- Facebook OpenGraph -->
-  <meta property="og:title" content="Build a Website in Azure using GitHub Actions, Jekyll and Terraform Cloud. – Someone Elses Cloud">
-  <meta property="og:description" content="Build a Website with an Azure Static Web App and use GitHub Actions to manage your continuous deployment with Terraform Cloud for Infrastructure and Jekyll to generate your static website content.">
-  <meta property="og:image" content="https://someoneelsescloud.github.io/images/2023-05-13/square-website-automation.jpg">
+  <meta property="og:title" content="Master Terraform State - What Every Engineer Must Know – Someone Elses Cloud">
+  <meta property="og:description" content="Master Terraform state with essential commands every engineer needs. Learn how to import, move, remove, unlock, backup, and restore your state safely!">
+  <meta property="og:image" content="https://someoneelsescloud.github.io/images/master-terraform-state-thumbnail.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -111,16 +111,16 @@
 
     <div class="row">
 
-          <h1 class="page-title">Build a Website in Azure using GitHub Actions, Jekyll and Terraform Cloud.</h1>
+          <h1 class="page-title">Master Terraform State - What Every Engineer Must Know</h1>
           
-          <p class="page-description">Build a Website with an Azure Static Web App and use GitHub Actions to manage your continuous deployment with Terraform Cloud for Infrastructure and Jekyll to generate your static website content.</p>
+          <p class="page-description">Master Terraform state with essential commands every engineer needs. Learn how to import, move, remove, unlock, backup, and restore your state safely!</p>
           
           <ul class="work-meta list-reset">
             <!-- 
             <li class="work-meta__item"><strong>Category:</strong> <span>DevOps</span></li>
             
             
-            <li class="work-meta__item"><strong>Date:</strong> <span>13 May 2023</span></li>
+            <li class="work-meta__item"><strong>Date:</strong> <span>06 Jul 2025</span></li>
              -->
             
             
@@ -133,529 +133,274 @@
 <div class="container animate">
 
   <div class="page">
-    <p><iframe src="https://www.youtube.com/embed/29r8FFi3G5M" loading="lazy" width="1920" height="1080" frameborder="0" allowfullscreen=""></iframe></p>
+    <!-- <p><iframe width="560" height="315" src="https://www.youtube.com/embed/uL8u0UAPO_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p> -->
+<h3 id="video-coming-soon">Video Coming Soon!</h3>
+<h1 id="mastering-terraform-state-management-learn-to-recover-from-disasters"><strong>Mastering Terraform State Management: Learn to Recover from Disasters!</strong></h1>
+<p>Effectively managing Terraform state is essential for maintaining reliable infrastructure as code workflows. In large enterprise environments, knowing how to modify and recover the state file during unforeseen issues is critical to keeping your deployments consistent, secure, and operational.</p>
 
-<p>I have been looking at moving away from <a href="https://www.squarespace.com/">Square Space</a> and thought I would look at  free hosting options.</p>
+<p>In this guide, we’ll walk through importing resources, moving resources, removing resources, unlocking state, and backing up or restoring state using the Terraform CLI, Azure CLI, and the Azure Portal.</p>
 
-<p>There’s multiple options out there, such as AWS S3 buckets, Azure Storage Accounts, Azure Static Web App and GitHub Pages. These days, you don’t even need to purchase a domain name, GitHub pages is probably the more favoured option as you get a username.github.io domain name if you didn’t want to pay for a custom domain name!</p>
+<p>We’ll cover all the common methods to ensure you’re comfortable managing, troubleshooting, and restoring Terraform state when needed.</p>
 
-<p>But I thought I would create this video and show all the technologies used in the real world today. The workflow in this video is a very common approach in today’s world working with  Cloud technologies. Initially there will be manual processes to setup the accounts and integration but once set up, its as easy as just pushing code to make future updates!</p>
-
-<p>Not to mention that this is a foundation where by you can enhance with A/B deployments, include throughout checks and testing before deploying, enforcing security controls or even scanning for bad practices!</p>
-
-<p>Really this is quite an over engineered scenario for your own personal page but its a fun project to learn different technologies and how they integrate!</p>
-
-<blockquote>
-  <p><a href="#">… and did I mention <strong>everything is <u>FREE!</u></strong></a></p>
-</blockquote>
-
-<p>So lets get started with setting up the configuration!</p>
-
-<p><img src="/images/2023-05-13/overview-v3.jpg" alt="Overview" title="Overview" /></p>
-
-<h2 id="overview">Overview</h2>
 <ul>
-  <li><a href="#pre-requisites">Pre-requisites</a></li>
-  <li><a href="#1-setup-terraform-cloud-workspace">1. Setup Terraform Cloud Workspace</a></li>
-  <li><a href="#2-create-a-service-principal">2. Create a Service Principal</a></li>
-  <li><a href="#3-assign-service-principal-permissions">3. Assign Service Principal Permissions</a></li>
-  <li><a href="#4-create-terraform-workspace-variables-for-azure-authentication">4. Create Terraform Workspace Variables for Azure Authentication</a></li>
-  <li><a href="#5-create-github-repository">5. Create GitHub Repository</a></li>
-  <li><a href="#6-create-terraform-workspace-variables-for-github-authentication">6. Create Terraform Workspace Variables for GitHub Authentication</a></li>
-  <li><a href="#7-configure-terraform-token-as-github-actions-secret">7. Configure Terraform Token as GitHub Actions Secret</a></li>
-  <li><a href="#8-setup-your-repository-with-the-demo-code">8. Setup Your Repository with the Demo Code</a></li>
-  <li><a href="#9-build-a-jekyll-website">9. Build a Jekyll Website</a></li>
-  <li><a href="#10-deploy-your-code">10. Deploy your Code</a></li>
-  <li><a href="#11-locate-your-website-url">11. Locate your Website URL</a></li>
-</ul>
-
-<h1 id="pre-requisites">Pre-requisites</h1>
-<ul>
-  <li><strong>Download Terraform (optional as Terraform Cloud is utilised via the workflow)</strong>
+  <li><strong><a href="#1-backup-and-restore-state">1.Backup and Restore State</a></strong>
     <ul>
-      <li>Install Terraform locally to run init, plans and apply. This is optional as GitHub Actions will invoke commands to Terraform Cloud.
-        <ol>
-          <li>Browse to <a href="https://developer.hashicorp.com/terraform/downloads">HashiCorp - Install Terraform</a></li>
-          <li>Extract your tools folder e.g. (C:\Workspace\Terraform)</li>
-          <li>Add the Path your Environment Path (Optional - For Convenience) - (<a href="https://www.computerhope.com/issues/ch000549.htm">Windows</a> or <a href="https://linuxize.com/post/how-to-add-directory-to-path-in-linux/">Linux</a>)</li>
-          <li>Run command to setup your local Terraform Cloud token:
-            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>terraform login
-</code></pre></div>            </div>
-          </li>
-        </ol>
-      </li>
+      <li>Backing up state before changes such as version upgrades or state modifications</li>
+      <li>Restoring state to recover from corruption, accidental state modifications and/or issues</li>
     </ul>
   </li>
-  <li><strong>Setup a Terraform Cloud Account</strong>
+  <li><strong><a href="#2-import-resources">2.Import Resources</a></strong>
     <ul>
-      <li>Register at <a href="https://app.terraform.io/public/signup/account">Terraform</a></li>
+      <li>The dreaded Resources already exist error, generally due to being deployed manually and are not in state</li>
+      <li>An incomplete terraform apply that failed but created the resource and didn’t write the resource to state</li>
+      <li>Importing resources to move state files (more so legacy environments or code being restructured)</li>
     </ul>
   </li>
-  <li><strong>Setup an Azure Account</strong>
+  <li><strong><a href="#3-move-resources">3.Move Resources</a></strong>
     <ul>
-      <li>Register at <a href="https://azure.microsoft.com/en-us/free/">Microsoft Azure</a></li>
+      <li>This is generally due to module changes in code, for example resource keys may change when adding new features to modules or even provider updates</li>
     </ul>
   </li>
-  <li><strong>Setup a GitHub Account</strong>
+  <li><strong><a href="#4-remove-resources">4.Remove Resources</a></strong>
     <ul>
-      <li>Sign Up at <a href="https://github.com/signup">GitHub</a></li>
+      <li>Generally to clean up state i.e. you want to manually manage a resource for some bespoke solution</li>
+      <li>Removing resources for decommissioning activities</li>
     </ul>
   </li>
-  <li><strong>Setup Jekyll</strong> (or your choice of software)
+  <li><strong><a href="#5-unlock-state">5.Unlock State</a></strong>
     <ul>
-      <li>Download and Setup Up <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">Jekyll</a></li>
+      <li>Generally when you run a terraform command that involves writing to state like an apply, the state file is locked to avoid any other modifications.</li>
+      <li>A graceful shutdown was not successful and the state file lock was not released.</li>
     </ul>
   </li>
 </ul>
 
-<h1 id="1-setup-terraform-cloud-workspace">1. Setup Terraform Cloud Workspace</h1>
-<p>Terraform workspace to create and manage Azure resources.</p>
-<ol>
-  <li>Log into <strong><a href="https://app.terraform.io/app">Terraform Cloud</a></strong></li>
-  <li>Under <strong>Projects &amp; Workspaces</strong></li>
-</ol>
+<h1 id="1-backup-and-restore-state"><strong>1. Backup and Restore State</strong></h1>
 
-<p><img src="/images/2023-05-13/projects-workspaces.png" alt="Alt text" title="Projects &amp; Workspaces" /></p>
-<ol>
-  <li>Click <strong>Create Workspace</strong> or <strong>New</strong> and Select <strong>Workspace</strong></li>
-</ol>
+<p><em><strong>Note:</strong> You should always have a backup of your state file and its always best practice to take a backup before you make significant changes to state including performing any upgrades.</em></p>
 
-<p><img src="/images/2023-05-13/new-workspace.png" alt="Alt text" title="New Workspace" /></p>
-<ol>
-  <li>Select <strong>API Driven Workflow</strong></li>
-</ol>
+<p>You can use the <strong>Terraform CLI</strong> to directly pull down a copy of your state file. Please keep in mind if you have your Terraform state stored in a remote storage account, that you will need to have network connectivity and permissions to the blob container (or S3 bucket) from where you are running the command.</p>
 
-<p><img src="/images/2023-05-13/api-driven.png" alt="Alt text" title="API Driven Workflow" /></p>
-<ol>
-  <li>Enter a <strong>Name</strong> for your <strong>Workspace</strong></li>
-  <li>Select a <strong>Project</strong> or leave as <strong>Default Project</strong></li>
-  <li>Click <strong>Create Workspace</strong></li>
-</ol>
+<p>In an Enterprise environment, you made not have direct access to the storage account, so here are some options:</p>
+<ul>
+  <li>Use Terraform code blocks (<a href="https://developer.hashicorp.com/terraform/language/import"><strong>import blocks</strong></a>, <a href="https://developer.hashicorp.com/terraform/language/resources/syntax#removing-resources"><strong>remove blocks</strong></a> and <a href="https://developer.hashicorp.com/terraform/language/moved"><strong>moved blocks</strong></a>)</li>
+  <li>Use Azure Portal to manually download the state file</li>
+  <li>Enable Blob versioning on the Terraform state blob container</li>
+  <li>Execute the commands from a build agent</li>
+</ul>
 
-<p><img src="/images/2023-05-13/name-workspace.png" alt="Alt text" title="Name Workspace" /></p>
-<ol>
-  <li>Once created you will see the <strong>Waiting for Configuration</strong> page</li>
-</ol>
+<h3 id="-terraform-cli"><strong># Terraform CLI</strong></h3>
+<p><strong>Backup State</strong></p>
 
-<p><img src="/images/2023-05-13/wait-config.png" alt="Alt text" title="Waiting for Configuration" /></p>
+<p>To save a local copy of the current state, use the following commands.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>terraform init
+terraform state pull &gt; backup.tfstate
+</code></pre></div></div>
 
-<h1 id="2-create-a-service-principal">2. Create a Service Principal</h1>
-<p>This service principal will be used to by the Terraform AzureRM provider to manage Azure.</p>
-<ol>
-  <li>Log into <strong><a href="https://portal.azure.com">Azure Portal</a></strong></li>
-  <li>Browse to <strong>Azure Active Directory</strong></li>
-  <li>Click <strong>App Registrations</strong></li>
-  <li>Click <strong>New Registration</strong></li>
-  <li>Enter a <strong>Name</strong></li>
-  <li>Select <strong>Accounts in this organizational directory only</strong></li>
-</ol>
+<p><strong>Restore State</strong></p>
 
-<p><img src="/images/2023-05-13/app-registration.png" alt="Alt text" title="App Registration" /></p>
-<ol>
-  <li>Click <strong>Register</strong></li>
-  <li>Once Done, Click <strong>Certificates &amp; Secrets</strong></li>
-  <li>Under <strong>Client Secrets</strong>, Select <strong>+ New Client Secret</strong></li>
-</ol>
+<p>First you need to edit the file <strong><em>backup.tfstate</em></strong> in Notepad or VSCode. Update the serial by increasing it by 1. The serial will need to be higher than the current state file serial before you push it up (please keep this in mind in the event that you have a very old backup and there have been changes since you took a backup)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "version": 4,
+  "terraform_version": "1.11.0",
+  "serial": 12, &lt;--- [Serial needs to be increased before pushing]
+  "lineage": "cdce38ed-6720-ea86-1568-5cee9efc78fd",
+...
+}
+</code></pre></div></div>
+<p>Once you have increased the serial, run the following command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>terraform state push backup.tfstate
+</code></pre></div></div>
+<p>This will push the backup state file back to the remote backend.</p>
 
-<p><img src="/images/2023-05-13/create-secret.png" alt="Create Secret" title="Create Secret" /></p>
-<ol>
-  <li>Enter a <strong>Description</strong> and Set an <strong>Expiry</strong></li>
-</ol>
+<h3 id="-azure-portal"><strong>&gt; Azure Portal</strong></h3>
+<p><em><strong>Note:</strong> If Blob versioning is enabled, that is the recommended option rather than the following manual steps!</em></p>
 
-<p><img src="/images/2023-05-13/add-secret.png" alt="Add Secret" title="Add Secret" /></p>
-<ol>
-  <li>Click <strong>Add</strong></li>
-  <li><a href="#">Take Note of the Secret</a> under <strong>Value</strong> (leave this screen as it is or copy the secret as it will disappear once you navigate awy from this screen!)</li>
-  <li>Open a New Azure Portal tab for the next step!</li>
-</ol>
+<p><strong>Backup State</strong></p>
 
-<h1 id="3-assign-service-principal-permissions">3. Assign Service Principal Permissions</h1>
-<p>This will be the role assignments that will give the service principal access to create and manage  Azure resources.</p>
-<ol>
-  <li>Browse to the resource (in this example <strong>Subscriptions</strong>)</li>
-  <li>Select <strong>Access Control (IAM)</strong></li>
-</ol>
+<p><strong>Option 1: (blob versioning)</strong></p>
+<ul>
+  <li>Use blob versioning, you only need to restore as all write actions are version controlled.</li>
+</ul>
 
-<p><img src="/images/2023-05-13/iam.png" alt="Access Control (IAM)" title="Access Control (IAM)" /></p>
-<ol>
-  <li>Click <strong>+ Add</strong></li>
-  <li>Select <strong>Add Role Assignment</strong></li>
-</ol>
-
-<p><img src="/images/2023-05-13/role-assignment.png" alt="Add Role Assignment" title="Add Role Assignment" /></p>
-<ol>
-  <li>Under <strong>Assignment Type</strong>, Select <strong>Privileged Administrator Roles</strong></li>
-  <li>Click <strong>Next</strong></li>
-  <li>Under <strong>Assignment Type</strong>, Enter the Permissions (in this example it will be <strong>Contributor</strong>)</li>
-</ol>
-
-<p><img src="/images/2023-05-13/contributor.png" alt="Contributor" title="Contributor" /></p>
-<ol>
-  <li>Click <strong>Next</strong></li>
-  <li>Under <strong>Assign Access To</strong>, Select <strong>User, Group, Or Service Principal</strong></li>
-  <li>Under <strong>Members</strong>, Click <strong>Select Members</strong></li>
-  <li><strong>Locate</strong> your Service Principal and Click <strong>Select</strong></li>
-</ol>
-
-<p><img src="/images/2023-05-13/select-sp.png" alt="Select Service Principal" title="Select Service Principal" /></p>
-<ol>
-  <li>Click <strong>Next</strong></li>
-  <li>Click <strong>Review + Assign</strong></li>
-</ol>
-
-<p><img src="/images/2023-05-13/assignment-success.png" alt="Assignment Success" title="Assignment Success" /></p>
-<ol>
-  <li>You should now have the Service Principal under the Role Assignments!</li>
-</ol>
-
-<p><img src="/images/2023-05-13/assignment-done.png" alt="Role Assignment Complete" title="Role Assignment Complete" /></p>
-
-<h1 id="4-create-terraform-workspace-variables-for-azure-authentication">4. Create Terraform Workspace Variables for Azure Authentication</h1>
-<p>These variables will be used to authentication the Terraform AzureRM provider.</p>
-<ol>
-  <li>Log into <strong><a href="https://app.terraform.io/app">Terraform Cloud</a></strong></li>
-  <li>Under <strong>Projects &amp; Workspaces</strong></li>
-</ol>
-
-<p><img src="/images/2023-05-13/projects-workspaces.png" alt="Alt text" title="Projects &amp; Workspaces" /></p>
-<ol>
-  <li>Locate and Select your <strong>Terraform Workspace</strong></li>
-  <li>Click <strong>Variables</strong></li>
-</ol>
-
-<p><img src="/images/2023-05-13/workspace-variables.png" alt="Workspace Variables" title="Workspace Variables" /></p>
-<ol>
-  <li>Now you will need get the details from above ( <strong>Create a Service Principal</strong> above)</li>
-  <li>Under <strong>Workspace Variables</strong>, Select <strong>+ Add Variable</strong></li>
-  <li>Now Create the Following Variables:</li>
-</ol>
-
-<table>
-  <thead>
-    <tr>
-      <th>Variable Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>client_id</strong></td>
-      <td>Client ID (also known as the Application ID) of your Service Principal</td>
-    </tr>
-    <tr>
-      <td><strong>client_secret</strong></td>
-      <td>Client Secret of your Service Principal</td>
-    </tr>
-    <tr>
-      <td><strong>subscription_id</strong></td>
-      <td>Subscription ID of where you have assigned your Service Principal Role Assignments</td>
-    </tr>
-    <tr>
-      <td><strong>tenant_id</strong></td>
-      <td>Tenant ID of your Azure Tenant</td>
-    </tr>
-  </tbody>
-</table>
+<p><strong>Option 2: (snapshots)</strong></p>
 
 <ol>
-  <li>Once done you should have a screen as below!</li>
+  <li>Go to the <strong>storage account</strong></li>
+  <li>Browse to the <strong>blob container</strong> and find the <strong>state file</strong>.</li>
+  <li>Click on <strong>Snapshots</strong></li>
+  <li>Click <strong>Create snapshot</strong></li>
 </ol>
 
-<blockquote>
-  <p><a href="#">Don’t forget to mark your secrets as sensitive as they can be used to access your subscription.</a>
-<img src="/images/2023-05-13/create-workspace-variables.png" alt="Create Workspace Variables" title="Create Workspace Variables" /></p>
-</blockquote>
-
-<h1 id="5-create-github-repository">5. Create GitHub Repository</h1>
-<p>This repository will be used to store the Terraform code and GitHub Actions Workflow.</p>
-<ol>
-  <li>Log into <strong><a href="https://github.com">GitHub.com</a></strong></li>
-  <li>Click <strong>New</strong></li>
-  <li>Enter a <strong>Repository Name</strong></li>
-  <li>Enter a <strong>Description</strong></li>
-  <li>Set the Repository to <strong>Public</strong></li>
-  <li>Select <strong>Initialize this repository with</strong>: Check <strong>Add  a README file</strong></li>
-  <li>Select <strong>Add .gitignore</strong> and Select <strong>Terraform</strong></li>
-  <li>Click <strong>Create Repository</strong></li>
-</ol>
-
-<p><img src="/images/2023-05-13/new-repo.png" alt="Alt text" title="New Repository" /></p>
-
-<h1 id="6-create-terraform-workspace-variables-for-github-authentication">6. Create Terraform Workspace Variables for GitHub Authentication</h1>
-<p>This token will be used with GitHub Actions to create a Secret via Terraform, which will be used to publish the website.</p>
-<ol>
-  <li>Log into <strong><a href="https://github.com">GitHub.com</a></strong></li>
-  <li>Click on your <strong>Profile</strong> and Select <strong>Settings</strong></li>
-</ol>
-
-<p><img src="/images/2023-05-13/github-settings.png" alt="Profile Settings" title="Profile Settings" /></p>
-<ol>
-  <li>Scroll to the bottom and Click <strong>Developer Settings</strong></li>
-  <li>Under <strong>Personal Access Tokens</strong>, Select <strong>Fine-Grained Tokens</strong></li>
-</ol>
-
-<p><img src="/images/2023-05-13/fine-grained-tokens.png" alt="Fine-Grained Tokens" title="Fine-Grained Tokens" /></p>
-<ol>
-  <li>Configure (as Required):</li>
-</ol>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Configuration</th>
-      <th>Attribute</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Token Name</strong></td>
-      <td>AZURE_STATIC_WEB_APPS_API_TOKEN</td>
-      <td>NA</td>
-      <td>Name for your token, this will appear in the GitHub UI</td>
-    </tr>
-    <tr>
-      <td><strong>Expiration</strong></td>
-      <td>30 Days</td>
-      <td>NA</td>
-      <td>This is up to you, ideally you should frequently rotate this on a regular basis</td>
-    </tr>
-    <tr>
-      <td><strong>Description</strong></td>
-      <td>Azure Static Web App API Token</td>
-      <td>NA</td>
-      <td>Description for your Token</td>
-    </tr>
-    <tr>
-      <td><strong>Repository Access</strong></td>
-      <td>Only Select Repositories</td>
-      <td>Select Your Repository Name</td>
-      <td>You should also go with the least privileged access controls to mitigate risks</td>
-    </tr>
-    <tr>
-      <td><strong>Metadata</strong></td>
-      <td>Read-Only (Mandatory Default)</td>
-      <td>NA</td>
-      <td>This is a Mandatory Configuration item</td>
-    </tr>
-    <tr>
-      <td><strong>Permissions</strong></td>
-      <td>Repository Permissions &gt; Actions</td>
-      <td>Read-Only</td>
-      <td>Required to Read the GitHub Actions Workflow</td>
-    </tr>
-    <tr>
-      <td><strong>Permissions</strong></td>
-      <td>Repository Permissions&gt; Secrets</td>
-      <td>Read and Write</td>
-      <td>Required to create the GitHub Actions Workflow Secret</td>
-    </tr>
-  </tbody>
-</table>
+<p><strong>Option 3: (manual)</strong></p>
 
 <ol>
-  <li>Click <strong>Generate Token</strong></li>
+  <li>Go to the storage account</li>
+  <li>Browse to the blob container and find the state file.</li>
+  <li>Use <strong>Download</strong> to save a backup locally.</li>
+  <li>To restore, use <strong>Upload</strong> to replace the existing state file.</li>
 </ol>
 
-<p><img src="/images/2023-05-13/generate-token.png" alt="Generate Token" title="Generate Token" /></p>
+<p><strong>Restore State</strong></p>
+
+<p>Using blob versioning:</p>
 <ol>
-  <li><strong>Copy</strong> the <strong>Personal Access Token</strong> (PAT)</li>
-  <li>Go back to Step 4 above to create a new <strong>Workspace Variable</strong> named <strong>GITHUB_TOKEN</strong></li>
+  <li>Go to the <strong>storage account</strong></li>
+  <li>Browse to the <strong>blob container</strong> and find the <strong>state file</strong>.</li>
+  <li>Click on <strong>Versions</strong></li>
+  <li>Locate the <strong>Version Id</strong> by <strong>Modified</strong> date that you want to restore</li>
+  <li>Click the 3 dots on the right hand side of the Version</li>
+  <li>Click <strong>Make current version</strong></li>
 </ol>
 
-<table>
-  <thead>
-    <tr>
-      <th>Variable Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>GITHUB_TOKEN</strong></td>
-      <td>GitHub Token to be able to Create the GitHub Actions Workflow Secret - <strong>Note</strong>: This is case sensitive and needs to align with the variables.tf file</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img src="/images/2023-05-13/github-variable.png" alt="GitHub Variable" title="GitHub Variable" /></p>
-<blockquote>
-  <p><a href="#">Don’t forget to mark your secrets as sensitive as they can be used to access your subscription.</a></p>
-</blockquote>
-
-<h1 id="7-configure-terraform-token-as-github-actions-secret">7. Configure Terraform Token as GitHub Actions Secret</h1>
-<p>This will be used with GitHub Actions to interface with Terraform Cloud via CLI.</p>
+<p>Using Snapshots:</p>
 <ol>
-  <li>Log into <strong><a href="https://app.terraform.io/app">Terraform Cloud</a></strong></li>
-  <li>Click on your <strong>Profile</strong></li>
-  <li>Click <strong>User Settings</strong></li>
+  <li>Go to the <strong>storage account</strong></li>
+  <li>Browse to the <strong>blob container</strong> and find the <strong>state file</strong>.</li>
+  <li>Click on <strong>Snapshots</strong></li>
+  <li>Locate the <strong>Name</strong> by <strong>Modified</strong> date that you want to restore</li>
+  <li>Click the 3 dots on the right hand side of the Version</li>
+  <li>Click <strong>Promote</strong></li>
 </ol>
 
-<p><img src="/images/2023-05-13/tf-profile.png" alt="Alt text" title="Terraform Profile" /></p>
+<h1 id="2-import-resources"><strong>2. Import Resources</strong></h1>
+<p>When a resource already exists in Azure but is missing from Terraform state, use <code class="language-plaintext highlighter-rouge">terraform import</code> to bring it under Terraforms control.</p>
+
+<p>You will need to have the following ready before importing:</p>
+<ul>
+  <li>Terraform code already written for the resource you want to import</li>
+  <li>Know what the target resource reference will be in state</li>
+  <li>The Resource ID of the resource you want to import.</li>
+</ul>
+
+<p><strong><em>Note:</em></strong> <em>The Terraform resource page has import information: <a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_group#import">azurerm_network_security_group</a></em></p>
+
+<h3 id="-terraform-cli-1"><strong># Terraform CLI</strong></h3>
+<p>If there are existing resources deployed with similar code, you can run the following command to see what the reference will look like in state.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>terraform state list
+
+Example: module.nsg.azurerm_network_security_group.this
+</code></pre></div></div>
+
+<p><strong>Import Command</strong></p>
+
+<p>To import the resource, run the following command and you should get a import successful message!</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>terraform import \
+  module.nsg.azurerm_network_security_group.this \
+  /subscriptions/&lt;subscription_id&gt;/resourceGroups/tf-resources/providers/Microsoft.Network/networkSecurityGroup/nsg-prod-ae-1
+</code></pre></div></div>
+
+<h3 id="-azure-portal-1"><strong>&gt; Azure Portal</strong></h3>
+<p>You can generally get the <strong>Resource ID</strong> from the Azure portal under the <strong>properties</strong> configuration blade.</p>
 <ol>
-  <li>Click <strong>Tokens</strong></li>
-  <li>Click <strong>Create an API Token</strong></li>
-  <li>Enter a <strong>Name</strong> and <strong>Expiration</strong></li>
+  <li>Navigate to the Resource.</li>
+  <li>Open the <strong>Properties</strong> blade.</li>
+  <li>Copy the <strong>Resource ID</strong> and use it in the <code class="language-plaintext highlighter-rouge">terraform import</code> command.</li>
 </ol>
 
-<p><img src="/images/2023-05-13/create-token.png" alt="Alt text" title="Create Token" /></p>
+<h3 id="-terraform-code"><strong>#&gt; Terraform Code</strong></h3>
+<p>Import blocks were released in Terraform v1.5.0 and later. The feature allows you to import resources using Terraform code, now why would you want to do this?</p>
+
+<p>The import will be executed within the code, this means that the import will run from the build agent (or client) that has permissions and network connectivity to manage and deploy resources to Azure. This is the recommended way if you have any network restrictions to execute terraform state commands locally.</p>
+
+<p>Add the following to <code class="language-plaintext highlighter-rouge">import.tf</code> (or in any other Terraform configuration file)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import {
+  to = module.nsg.azurerm_network_security_group.this
+  id = "/subscriptions/&lt;subscription_id&gt;/resourceGroups/tf-resources/providers/Microsoft.Network/networkSecurityGroup/nsg-prod-1"
+}
+</code></pre></div></div>
+<p>Run <code class="language-plaintext highlighter-rouge">terraform apply</code> once it has been applied once, it will not run again but its best to remove the code once the apply has run!</p>
+
+<h1 id="3move-resources"><strong>3.Move Resources</strong></h1>
+<p>When refactoring Terraform code, you may need to move resources to avoid configuration changes or destroys. Use <code class="language-plaintext highlighter-rouge">terraform state mv</code> to update the state.</p>
+
+<p>A simple example of this is to move a native resource into a module (<em>technically you could remove it from state and then import it but a move would be a single command</em>).</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Before
+resource "azurerm_network_security_group" "old" {
+...
+}
+
+# After
+module "nsg3" {
+  source  = "Azure/avm-res-network-networksecuritygroup/azurerm"
+  ...
+}
+</code></pre></div></div>
+
+<h3 id="-terraform-cli-2"><strong># Terraform CLI</strong></h3>
+<p><strong>Move in State</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>terraform state mv \
+  azurerm_network_security_group.old \
+  module.nsg3.azurerm_network_security_group.this
+</code></pre></div></div>
+
+<h3 id="-terraform-code-1"><strong>#&gt; Terraform Code</strong></h3>
+<p>Moved blocks were released in Terraform v1.3.x and later. This is the recommended way if you have any network restrictions to execute terraform state commands locally.</p>
+
+<p>Add the following to <code class="language-plaintext highlighter-rouge">moved.tf</code> (or in any other Terraform configuration file)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>moved {
+  from = azurerm_network_security_group.old
+  to = module.nsg3.azurerm_network_security_group.this
+}
+</code></pre></div></div>
+<p>Run <code class="language-plaintext highlighter-rouge">terraform apply</code> once it has been applied once, it will not run again but its best to remove the code once the apply has run!</p>
+
+<h1 id="4-remove-resources"><strong>4. Remove Resources</strong></h1>
+<p>You want to manually manage a VM outside of Terraform. To manually remove a resource from Terraform state without deleting it in Azure, use <code class="language-plaintext highlighter-rouge">terraform state rm</code>.</p>
+
+<h3 id="-terraform-cli-3"><strong># Terraform CLI</strong></h3>
+<p><strong>Remove from State</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>terraform state rm \
+  azurerm_linux_virtual_machine.vm
+</code></pre></div></div>
+<p>This removes the resource from Terraform state while leaving it in Azure.</p>
+
+<h3 id="-terraform-code-2"><strong>#&gt; Terraform Code</strong></h3>
+<p>Removed blocks were released in Terraform v1.7 and later. More information on how to execute this can be found at: <a href="https://support.hashicorp.com/hc/en-us/articles/34185721057555-Removing-a-Resource-from-the-Terraform-State-Using-the-removed-block"># Removing a Resource from the Terraform State Using the “removed” block</a></p>
+
+<p><em><strong>Note:</strong> There appears to be a limitation at the time of writing that you cannot remove instances of a module, you can only remove the entire module. For example you can only remove</em> <code class="language-plaintext highlighter-rouge">module.vm.azurerum_virtual_machine</code> <em>and not</em> <code class="language-plaintext highlighter-rouge">module.vm.azurerum_virtual_machine.myfavoritevm</code>. <em>The</em> <code class="language-plaintext highlighter-rouge">terraform state rm</code> <em>command is the recommendation option if this does not meet your requirements!</em></p>
+
+<p>Add the following to <code class="language-plaintext highlighter-rouge">removed.tf</code> (or in any other Terraform configuration file)
+<em><strong>Note:</strong> You need to add the</em> <code class="language-plaintext highlighter-rouge">lifecycle</code> <em>parameter to ensure that the resource is not destroyed!</em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>removed {  
+  from = null_resource.null  
+  
+  lifecycle {  
+    destroy = false  
+  }  
+}
+</code></pre></div></div>
+<p>Run <code class="language-plaintext highlighter-rouge">terraform apply</code> once it has been applied once, it will not run again but its best to remove the code once the apply has run!</p>
+
+<h1 id="5-unlock-state"><strong>5. Unlock State</strong></h1>
+<p>Terraform locks the state during write operations. If an error leaves the lock in place, you need to manually unlock it.</p>
+
+<p>Generally the error will appear with the <strong>LOCK_ID</strong>. You can use either of the following to release the Terraform state lock.</p>
+
+<h3 id="-terraform-cli-4"><strong># Terraform CLI</strong></h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>terraform force-unlock -force &lt;LOCK_ID&gt;
+</code></pre></div></div>
+<p>You can find the lock ID in the error message or backend storage.</p>
+
+<h3 id="-azure-cli"><strong># Azure CLI</strong></h3>
+<p>If you use an Storage Account for state backend and the lock is caused by a blob lease, you can break the lease:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>az storage blob lease break \
+  --account-name &lt;storage_account_name&gt; \
+  --container-name &lt;container_name&gt; \
+  --blob-name &lt;state_file_name&gt;
+</code></pre></div></div>
+
+<h3 id="-azure-portal-2"><strong>&gt; Azure Portal</strong></h3>
 <ol>
-  <li>Click <strong>Generate Token</strong></li>
-  <li><strong>Copy the Token</strong></li>
-  <li>Browse back to <strong><a href="https://github.com">GitHub.com</a></strong></li>
-  <li>Find the newly created repository and Click <strong>Settings</strong></li>
-  <li>Under <strong>Security</strong>, Select <strong>Secrets and Variables</strong> then Select <strong>Actions</strong></li>
+  <li>Go to the storage account.</li>
+  <li>Navigate to the blob container where your state file is stored.</li>
+  <li>Locate the state file, click <strong>Break Lease</strong> in the toolbar.</li>
 </ol>
 
-<p><img src="/images/2023-05-13/github-secrets.png" alt="Alt text" title="GitHub Secrets" /></p>
-<ol>
-  <li>Under Secrets, Select <strong>New Repository Secret</strong></li>
-</ol>
+<h1 id="closing-thoughts">Closing Thoughts</h1>
+<p>I hope this guide gave you the clarity and confidence to manage your Terraform state like a pro. If you’d like to see these concepts in action, check out the accompanying video above where I walk through real-world examples step by step.</p>
 
-<p><img src="/images/2023-05-13/new-secret.png" alt="Alt text" title="New Repository Secret" /></p>
-<ol>
-  <li>Enter a <strong>Name</strong> for the <strong>Secret</strong> (example is TF_API_TOKEN)</li>
-  <li>In the <strong>Secret</strong> box, Paste the above <strong>API Token</strong></li>
-</ol>
-
-<p><img src="/images/2023-05-13/actions-secret.png" alt="Alt text" title="Actions Secret" /></p>
-<ol>
-  <li>Click <strong>Add Secret</strong></li>
-  <li>Now you should have a new secret under <strong>Repository Secrets</strong></li>
-</ol>
-
-<p><img src="/images/2023-05-13/api-token.png" alt="Alt text" title="API Token" /></p>
-
-<h1 id="8-setup-your-repository-with-the-demo-code">8. Setup Your Repository with the Demo Code</h1>
-<p>So next up, we will write some simple Terraform code to deploy the resource group and static web app.
-Clone my repository which has all the Terraform code and GitHub Actions Workflow.</p>
-<ol>
-  <li>Log into <strong><a href="https://github.com">GitHub.com</a></strong></li>
-  <li>Clone the above repository: <strong><a href="https://github.com/someoneelsescloud/azure_website_actions_terraform">azure_website_actions_terraform</a></strong></li>
-  <li>Copy all the Terraform files (*.tf) to your <strong>NEW REPOSITORY</strong> created in step <a href="#6-create-github-repository">6. Create GitHub Repository</a></li>
-  <li>Update the following configuration:</li>
-</ol>
-
-<table>
-  <thead>
-    <tr>
-      <th>Filename</th>
-      <th>Configuration</th>
-      <th>Attribute</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>providers.tf</strong></td>
-      <td>Terraform &gt; Cloud</td>
-      <td>Organization</td>
-      <td>Add your Terraform Cloud Organization Name</td>
-    </tr>
-    <tr>
-      <td><strong>providers.tf</strong></td>
-      <td>Terraform &gt; workspaces</td>
-      <td>Name</td>
-      <td>Add your Terraform Cloud Workspace Name</td>
-    </tr>
-    <tr>
-      <td><strong>main.tf</strong></td>
-      <td>locals &gt; repo_name</td>
-      <td>NA</td>
-      <td>Add your Repository Name</td>
-    </tr>
-  </tbody>
-</table>
-
-<ol>
-  <li>Copy the <strong>.github/workflows/website-automation.txt</strong> folder to your  <strong>NEW REPOSITORY</strong></li>
-  <li>Rename the file <strong>website-automation.txt</strong> to <strong>website-automation.yaml</strong> (this was named as a txt so my repo does try and the GitHub Actions Workflow everytime!)</li>
-</ol>
-
-<h1 id="9-build-a-jekyll-website">9. Build a Jekyll Website</h1>
-<p>This is an option step, you can choose software of your choice. Once you have website code, it will need to be updated to the /src folder in your repository. The following steps are from the <a href="https://jekyllrb.com/docs/">Jekyll - Quick Start</a> page. This was run on WSL Ubuntu.</p>
-
-<p>You can also get Jekyll templates from <a href="https://jekyllthemes.io/free">here</a>. We’ll be using the <a href="https://github.com/thiagorossener/jekflix-template">Jekflix Template</a> in this demo.</p>
-<ol>
-  <li>Install <strong>Gem</strong> and <strong>Jekyll</strong> by running:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo gem install jekyll bundler
-</code></pre></div>    </div>
-  </li>
-  <li>Browse to a temp directory. This will become your local website development directory</li>
-  <li>Create a new Jekyll website by running:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo jekyll new mywebsite
-</code></pre></div>    </div>
-  </li>
-  <li>Browse to the <code class="language-plaintext highlighter-rouge">mywebsite</code> folder:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd mywebsite
-</code></pre></div>    </div>
-  </li>
-  <li>Now build the website with Jekyll:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll build --destination &lt;path-to-repo&gt;/src
-</code></pre></div>    </div>
-  </li>
-  <li>Now in your repository folder you should have a <strong>/src</strong> folder with html files.</li>
-</ol>
-
-<h1 id="10-deploy-your-code">10. Deploy your Code</h1>
-<p>Your repository should look something along the lines of:</p>
-
-<p><img src="/images/2023-05-13/repo-files.png" alt="Repo Files" title="Repo Files" /></p>
-<ol>
-  <li>Now merge your code into master
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
-git commit -m "initial upload"
-git push
-</code></pre></div>    </div>
-  </li>
-  <li>Once your code is merged, open <strong><a href="https://github.com">GitHub.com</a></strong></li>
-  <li>Click <strong>Actions</strong></li>
-  <li>Under <strong>All Workflows</strong>, Select the <strong>Running Workflow</strong>
-    <blockquote>
-      <p><a href="#"><strong>Note</strong>: You might will get an initial failure because your <strong>github_actions_secret</strong> is created but it appears that the workflow does not update for the next stage, so it needs to be run again!</a></p>
-    </blockquote>
-  </li>
-</ol>
-
-<p><img src="/images/2023-05-13/token-error.png" alt="Token Error" title="Token Error" /></p>
-<ol>
-  <li>If you get the above error, you can open the failed job and Click <strong>Re-Run Jobs</strong> and Select <strong>Re-Run All Jobs</strong></li>
-</ol>
-
-<p><img src="/images/2023-05-13/re-run-jobs.png" alt="Re-Run All Jobs" title="Re-Run All Jobs" /></p>
-
-<h1 id="11-locate-your-website-url">11. Locate your Website URL</h1>
-<ol>
-  <li>Log into <strong><a href="https://portal.azure.com">Azure Portal</a></strong></li>
-  <li>Locate your Resource Group (this will be in the Plan / Apply outputs from your GitHub Actions runs)</li>
-  <li>Click on the <strong>Static Web App</strong></li>
-  <li>Locate the <strong>URL</strong> and this is your <strong>Website URL</strong></li>
-</ol>
-
-<p><img src="/images/2023-05-13/website-url.png" alt="Website URL" title="Website URL" /></p>
-
-<blockquote>
-  <p><a href="#">If you want to make changes to your website, all you need to do is push code to the <strong>/src</strong> folder and the GitHub Actions Workflow will republish your website!</a></p>
-</blockquote>
-
-<h3 id="learn-more-at-the-following">Learn more at the following:</h3>
-<p>You can learn more from the links below!</p>
-
-<p><strong>- <a href="https://developer.hashicorp.com/terraform/tutorials/automation/github-actions">HashiCorp - Automate Terraform with GitHub Actions</a></strong><br />
-<strong>- <a href="https://developer.hashicorp.com/terraform/tutorials/cloud-get-started">HashiCorp - Get Started - Terraform Cloud</a></strong><br />
-<strong>- <a href="https://docs.github.com/en/actions/quickstart">Quickstart for GitHub Actions</a></strong><br />
-<strong>- <a href="https://docs.github.com/en/actions/learn-github-actions">Learn GitHub Actions</a></strong><br />
-<strong>- <a href="https://azure.microsoft.com/en-us/products/app-service/static/">Microsoft - Static Web Apps</a></strong><br />
-<strong>- <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">Jekyll - Getting Started</a></strong></p>
-
-<p>And that is it! You should now have a new website and this is generally how infrastructure and applications are managed in larger environments. Obviously there’s more controls such a code approvers, tighter security controls around access and networking but this was a cool project to experience multiple technologies and did I mention.. everything is free!</p>
-
-<p>Hope you enjoyed this blog and the YouTube video!</p>
-
-<p>Cheers<br />
-Sunny</p>
-
+<p>Thanks for reading, and I hope this helped simplify one of the most critical parts of Terraform workflows!</p>
 
   </div>
 
@@ -673,38 +418,21 @@ Sunny</p>
           
           <article class="work col col-6 col-d-12">
             <div class="work__content">
-              <a href="/work/experience-taking-az-500-azure-security-exam" class="work__image">
-                <img class="lazy" data-src="/images/2023-03-14/az-500.jpg" alt="My experience in taking the AZ-500 Microsoft Azure Security Technologies Exam">
+              <a href="/automate-azure-reporting-with-powershell/" class="work__image">
+                <img class="lazy" data-src="/images/2024-02-03-square.jpg" alt="Automate Azure Reporting with PowerShell! Update or Audit Your Azure Infrastructure at Scale!">
               </a>
               <div class="work__info">
                 
                 <div class="work__category">Certification</div>
                 
-                <h3 class="work__title"><a href="/work/experience-taking-az-500-azure-security-exam">My experience in taking the AZ-500 Microsoft Azure Security Technologies Exam</a></h3>
+                <h3 class="work__title"><a href="/automate-azure-reporting-with-powershell/">Automate Azure Reporting with PowerShell! Update or Audit Your Azure Infrastructure at Scale!</a></h3>
                 
-                <p class="work__description">I share with you my experience in taking the AZ-500 Microsoft Azure Security Technologies Exam in 2023. I will talk about the Cyber Security certifcation path, details around the exam, things to consider and tips if you plan on taking the exam!</p>
+                <p class="work__description">Automate Azure Reporting with PowerShell! Update or Audit Your Azure Infrastructure at Scale!In this video, I walk through how I use PowerShell to create inventory reports on Azure virtual machines and how to add conditional expressions to deal with different scenarios.</p>
                 
               </div>
             </div>
           </article>
           
-          
-          <article class="work col col-6 col-d-12">
-            <div class="work__content">
-              <a href="/work/build-website-github-pages-jekyll" class="work__image">
-                <img class="lazy" data-src="/images/2023-05-25/thumbnail-square.jpg" alt="Create a FREE Website with GitHub Pages and Jekyll.">
-              </a>
-              <div class="work__info">
-                
-                <div class="work__category">DevOps</div>
-                
-                <h3 class="work__title"><a href="/work/build-website-github-pages-jekyll">Create a FREE Website with GitHub Pages and Jekyll.</a></h3>
-                
-                <p class="work__description">Create a FREE Website with GitHub Pages and Jekyll in less than 10 minutes! No need to know HTML code or CCS because everything is in markdown!</p>
-                
-              </div>
-            </div>
-          </article>
           
         </div>
       </div>
