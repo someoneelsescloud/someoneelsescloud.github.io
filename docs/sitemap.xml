@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://someoneelsescloud.github.io/confessions/</loc>
-<lastmod>2025-07-05T08:23:47+10:00</lastmod>
+<lastmod>2025-07-12T12:33:15+10:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/elements/</loc>
-<lastmod>2025-07-05T08:23:47+10:00</lastmod>
+<lastmod>2025-07-12T12:33:15+10:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/tags/</loc>
-<lastmod>2025-07-05T08:23:47+10:00</lastmod>
+<lastmod>2025-07-12T12:33:15+10:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/blog/learn-how-to-create-terraform-modules-for-azure</loc>
@@ -83,6 +83,14 @@
 <url>
 <loc>https://someoneelsescloud.github.io/work/building-azure-lab-terraform-from-scratch</loc>
 <lastmod>2024-06-12T22:01:35+10:00</lastmod>
+</url>
+<url>
+<loc>https://someoneelsescloud.github.io/work/automate-azure-reporting-with-powershell-update-or-audit-your-azure-infrastructure-at-scale</loc>
+<lastmod>2025-07-04T11:57:48+10:00</lastmod>
+</url>
+<url>
+<loc>https://someoneelsescloud.github.io/work/master-terraform-state-what-every-engineer-must-know</loc>
+<lastmod>2025-07-06T22:01:35+10:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/blog/</loc>
