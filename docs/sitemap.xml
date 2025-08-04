@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://someoneelsescloud.github.io/confessions/</loc>
-<lastmod>2025-08-04T19:20:21+10:00</lastmod>
+<lastmod>2025-08-04T19:25:47+10:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/elements/</loc>
-<lastmod>2025-08-04T19:20:21+10:00</lastmod>
+<lastmod>2025-08-04T19:25:47+10:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/tags/</loc>
-<lastmod>2025-08-04T19:20:21+10:00</lastmod>
+<lastmod>2025-08-04T19:25:47+10:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/learn-how-to-create-terraform-modules-for-azure/</loc>
@@ -85,7 +85,7 @@
 <lastmod>2025-07-04T11:57:48+10:00</lastmod>
 </url>
 <url>
-<loc>https://someoneelsescloud.github.io/my-3-state-roadmap-for-azure/</loc>
+<loc>https://someoneelsescloud.github.io/my-3-stage-roadmap-for-azure/</loc>
 <lastmod>2025-07-31T22:01:35+10:00</lastmod>
 </url>
 <url>
