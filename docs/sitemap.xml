@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://someoneelsescloud.github.io/confessions/</loc>
-<lastmod>2025-10-05T11:42:28+11:00</lastmod>
+<lastmod>2025-10-11T07:30:08+11:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/elements/</loc>
-<lastmod>2025-10-05T11:42:28+11:00</lastmod>
+<lastmod>2025-10-11T07:30:08+11:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/tags/</loc>
-<lastmod>2025-10-05T11:42:28+11:00</lastmod>
+<lastmod>2025-10-11T07:30:08+11:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/learn-how-to-create-terraform-modules-for-azure/</loc>
@@ -86,15 +86,15 @@
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/azure-resource-inventory/</loc>
-<lastmod>2025-10-02T11:40:30+10:00</lastmod>
+<lastmod>2025-10-02T12:36:35+10:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/good-vs-great-cloud-engineer/</loc>
-<lastmod>2025-10-03T11:40:29+10:00</lastmod>
+<lastmod>2025-10-03T12:36:35+10:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/manage-azure-ipam-with-terraform/</loc>
-<lastmod>2025-10-04T11:40:29+10:00</lastmod>
+<lastmod>2025-10-04T12:36:35+10:00</lastmod>
 </url>
 <url>
 <loc>https://someoneelsescloud.github.io/blog/</loc>
